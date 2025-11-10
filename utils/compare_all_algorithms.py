@@ -29,6 +29,18 @@ try:
 except Exception as e:
     print(f"Warning: Could not import ACOR_Solver - {e}")
     ACOR_Solver = None
+    
+try:
+    from algo5_CS.continuous.main import cuckoo_search as CS_Solver
+except Exception as e:
+    print(f"Warning: Could not import CS_Solver - {e}")
+    CS_Solver = None
+
+try:
+    from algo5_CS.discrete.main import cuckoo_search_tsp as CS_TSP_Solver
+except Exception as e:
+    print(f"Warning: Could not import CS_TSP_Solver - {e}")
+    CS_TSP_Solver = None
 
 try:
     from algo1_ACO.tsp.ACO import ACO_TSP_Solver
@@ -59,6 +71,18 @@ try:
 except:
     print("Warning: Could not import DiscreteFireflyAlgorithm")
     DiscreteFireflyAlgorithm = None
+
+try:
+    from algo3_ABC.continuous.main import artificial_bee_colony
+except:
+    print("Warning: Could not import ABC continuous")
+    artificial_bee_colony = None
+
+try:
+    from algo3_ABC.discrete.main import artificial_bee_colony_tsp
+except:
+    print("Warning: Could not import ABC discrete")
+    artificial_bee_colony_tsp = None
 
 # Import traditional algorithms
 from algo_Traditional.continuous_traditional import HillClimbing, GeneticAlgorithm
@@ -198,7 +222,7 @@ def run_continuous_comparison(n_dims=5, bounds=(-5.12, 5.12),
     
     # --- 5. Firefly Algorithm ---
     if FireflyAlgorithm:
-        print("\n[5/5] Running Firefly Algorithm (Swarm Intelligence)...")
+        print("\n[5/6] Running Firefly Algorithm (Swarm Intelligence)...")
         start_time = time.time()
         fa = FireflyAlgorithm(
             objective_func=function,
@@ -223,7 +247,79 @@ def run_continuous_comparison(n_dims=5, bounds=(-5.12, 5.12),
             extra_info={'fireflies': 30, 'iterations': 100}
         ))
     else:
-        print("\n[5/5] Firefly Algorithm not available - skipping")
+        print("\n[5/6] Firefly Algorithm not available - skipping")
+
+    # --- 6. Artificial Bee Colony ---
+    if artificial_bee_colony:
+        print("\n[6/7] Running Artificial Bee Colony (Swarm Intelligence)...")
+        start_time = time.time()
+
+        # Configure ABC parameters similar to the implementation
+        N = 50              # Number of food sources (population size)
+        D = n_dims          # Problem dimension
+        MaxGen = 100        # Number of iterations
+        limit = 20          # Trial limit for scout bees
+
+        try:
+            # artificial_bee_colony expects: func_to_optimize, LB, UB, D, N, MaxGen, limit
+            abc_solution, abc_cost, abc_history = artificial_bee_colony(
+                function, bounds[0], bounds[1], D, N, MaxGen, limit
+            )
+        except Exception as e:
+            print(f"Error running ABC continuous: {e}")
+            abc_solution, abc_cost, abc_history = None, float('inf'), []
+
+        abc_time = time.time() - start_time
+
+        results.append(AlgorithmResults(
+            name="ABC (Swarm)",
+            solution=abc_solution,
+            cost=abc_cost,
+            time_elapsed=abc_time,
+            convergence_history=abc_history,
+            extra_info={'population': N, 'iterations': MaxGen, 'limit': limit}
+        ))
+    else:
+        print("\n[6/7] Artificial Bee Colony not available - skipping")
+
+    # --- 7. Cuckoo Search ---
+    if CS_Solver:
+        print("\n[7/7] Running Cuckoo Search (Swarm Intelligence)...")
+        start_time = time.time()
+        
+        # Configure CS parameters similar to the implementation
+        N = 50              # Number of nests (population)
+        MaxGen = 100        # Number of generations
+        pa = 0.25          # Discovery rate 
+        alpha = 0.01       # Step size scaling
+
+        try:
+            cs_solution, cs_cost, cs_history = CS_Solver(
+                func_to_optimize=function,
+                LB=bounds[0],
+                UB=bounds[1],
+                D=n_dims,
+                N=N,
+                MaxGen=MaxGen,
+                pa=pa,
+                alpha=alpha
+            )
+        except Exception as e:
+            print(f"Error running CS continuous: {e}")
+            cs_solution, cs_cost, cs_history = None, float('inf'), []
+
+        cs_time = time.time() - start_time
+
+        results.append(AlgorithmResults(
+            name="CS (Swarm)",
+            solution=cs_solution,
+            cost=cs_cost,
+            time_elapsed=cs_time,
+            convergence_history=cs_history,
+            extra_info={'nests': N, 'iterations': MaxGen, 'discovery_rate': pa}
+        ))
+    else:
+        print("\n[7/7] Cuckoo Search not available - skipping")
     
     return results
 
@@ -380,7 +476,86 @@ def run_tsp_comparison(n_cities=20, map_size=100, seed=42):
         ))
     else:
         print("\n[6/6] Discrete Firefly Algorithm not available - skipping")
-    
+
+    # --- 7. Artificial Bee Colony for TSP ---
+    if 'artificial_bee_colony_tsp' in globals() and artificial_bee_colony_tsp:
+        print("\n[7/8] Running Artificial Bee Colony for TSP (Swarm Intelligence)...")
+        start_time = time.time()
+        # Configure ABC parameters
+        N = 40              # Number of food sources (population size)
+        D = len(cities)     # Dimension (number of cities)
+        MaxGen = 100        # Number of iterations
+        limit = 20          # Trial limit for scout bees
+
+        # Create distance matrix
+        dist_matrix = np.zeros((len(cities), len(cities)))
+        for i in range(len(cities)):
+            for j in range(len(cities)):
+                if i != j:
+                    dist_matrix[i, j] = np.sqrt(np.sum((cities[i] - cities[j])**2))
+
+        try:
+            abc_tour, abc_cost, abc_history = artificial_bee_colony_tsp(dist_matrix, D, N, MaxGen, limit)
+        except Exception as e:
+            print(f"Error running ABC TSP: {e}")
+            abc_tour, abc_cost, abc_history = None, float('inf'), []
+
+        abc_time = time.time() - start_time
+
+        results.append(AlgorithmResults(
+            name="ABC (Swarm)",
+            solution=abc_tour,
+            cost=abc_cost,
+            time_elapsed=abc_time,
+            convergence_history=abc_history,
+            extra_info={'population': N, 'iterations': MaxGen, 'limit': limit}
+        ))
+    else:
+        print("\n[7/8] Artificial Bee Colony for TSP not available - skipping")
+
+    # --- 8. Cuckoo Search for TSP ---
+    if CS_TSP_Solver:
+        print("\n[8/8] Running Cuckoo Search for TSP (Swarm Intelligence)...")
+        start_time = time.time()
+
+        # Configure CS parameters
+        N = 40              # Number of nests
+        D = len(cities)     # Number of cities
+        MaxGen = 100        # Number of iterations
+        pa = 0.25          # Discovery rate
+
+        # Create distance matrix
+        dist_matrix = np.zeros((len(cities), len(cities)))
+        for i in range(len(cities)):
+            for j in range(len(cities)):
+                if i != j:
+                    dist_matrix[i, j] = np.sqrt(np.sum((cities[i] - cities[j])**2))
+
+        try:
+            cs_tour, cs_cost, cs_history = CS_TSP_Solver(
+                dist_matrix=dist_matrix, 
+                D=D,
+                N=N, 
+                MaxGen=MaxGen, 
+                pa=pa
+            )
+        except Exception as e:
+            print(f"Error running CS TSP: {e}")
+            cs_tour, cs_cost, cs_history = None, float('inf'), []
+
+        cs_time = time.time() - start_time
+
+        results.append(AlgorithmResults(
+            name="CS (Swarm)",
+            solution=cs_tour,
+            cost=cs_cost,
+            time_elapsed=cs_time,
+            convergence_history=cs_history,
+            extra_info={'nests': N, 'iterations': MaxGen, 'discovery_rate': pa}
+        ))
+    else:
+        print("\n[8/8] Cuckoo Search for TSP not available - skipping")
+
     return results, cities
 
 
