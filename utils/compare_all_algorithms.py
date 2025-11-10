@@ -73,10 +73,10 @@ except:
     DiscreteFireflyAlgorithm = None
 
 try:
-    from algo3_ABC.continuous.main import artificial_bee_colony
-except:
-    print("Warning: Could not import ABC continuous")
-    artificial_bee_colony = None
+    from algo3_ABC.continuous.main import ABC_Solver
+except Exception as e:
+    print(f"Warning: Could not import ABC continuous - {e}")
+    ABC_Solver = None
 
 try:
     from algo3_ABC.discrete.main import artificial_bee_colony_tsp
@@ -250,7 +250,7 @@ def run_continuous_comparison(n_dims=5, bounds=(-5.12, 5.12),
         print("\n[5/6] Firefly Algorithm not available - skipping")
 
     # --- 6. Artificial Bee Colony ---
-    if artificial_bee_colony:
+    if ABC_Solver:
         print("\n[6/7] Running Artificial Bee Colony (Swarm Intelligence)...")
         start_time = time.time()
 
@@ -261,13 +261,22 @@ def run_continuous_comparison(n_dims=5, bounds=(-5.12, 5.12),
         limit = 20          # Trial limit for scout bees
 
         try:
-            # artificial_bee_colony expects: func_to_optimize, LB, UB, D, N, MaxGen, limit
-            abc_solution, abc_cost, abc_history = artificial_bee_colony(
-                function, bounds[0], bounds[1], D, N, MaxGen, limit
+            abc = ABC_Solver(
+                cost_function=function,
+                n_dims=D,
+                bounds=bounds,
+                pop_size=N,
+                n_iterations=MaxGen,
+                limit=limit,
+                track_archive=True
             )
+
+            abc_solution, abc_cost = abc.run()
+            abc_history = abc.convergence_history if hasattr(abc, 'convergence_history') else []
+            abc_archive_history = abc.archive_history if hasattr(abc, 'archive_history') else []
         except Exception as e:
             print(f"Error running ABC continuous: {e}")
-            abc_solution, abc_cost, abc_history = None, float('inf'), []
+            abc_solution, abc_cost, abc_history, abc_archive_history = None, float('inf'), [], []
 
         abc_time = time.time() - start_time
 
