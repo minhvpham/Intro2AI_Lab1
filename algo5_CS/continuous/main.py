@@ -42,7 +42,11 @@ def cuckoo_search(
     MaxGen: int = 1000,
     pa: float = 0.25,
     alpha: float = None,
-    Lambda: float = 1.5
+    Lambda: float = 1.5,
+    seed: int = 42,
+    record_population: bool = False,
+    record_interval: int = 1,
+    max_history: int = None,
 ) -> Tuple[np.ndarray, float, List[float]]:
     """
     Optimized Cuckoo Search (vectorized) for continuous problems.
@@ -79,7 +83,8 @@ def cuckoo_search(
     history : list
         Best fitness history per generation (len = MaxGen+1).
     """
-    np.random.seed(42)
+    if seed is not None:
+        np.random.seed(int(seed))
     if alpha is None:
         alpha = 0.01 * (UB - LB)
 
@@ -92,11 +97,14 @@ def cuckoo_search(
     best_f = float(fitness[best_idx])
 
     history = [best_f]
+    pop_history = []
+    if record_population:
+        pop_history.append(nests.copy())
 
     n_abandon = max(1, int(round(pa * N)))  # ensure at least one when pa>0
 
     for gen in range(1, MaxGen + 1):
-        # ----------------- Generate new cuckoo solutions (vectorized) -----------------
+    # ----------------- Generate new cuckoo solutions (vectorized) -----------------
         steps = levy_flights_batch(N, D, Lambda=Lambda)        # (N, D)
         candidates = nests + alpha * steps
         np.clip(candidates, LB, UB, out=candidates)
@@ -151,10 +159,21 @@ def cuckoo_search(
 
         history.append(best_f)
 
+        # record population history if requested (decimated by record_interval)
+        if record_population and (gen % max(1, record_interval) == 0):
+            pop_history.append(nests.copy())
+
+        # trim history if requested
+        if max_history is not None and len(pop_history) > max_history:
+            # keep most recent frames
+            pop_history = pop_history[-int(max_history):]
+
         # optional logging
         if gen % max(1, (MaxGen // 10)) == 0:
             print(f"Gen {gen}/{MaxGen}: Best = {best_f:.6e}")
 
+    if record_population:
+        return best_nest, best_f, history, pop_history
     return best_nest, best_f, history
 
 
