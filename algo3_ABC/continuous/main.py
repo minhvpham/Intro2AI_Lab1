@@ -8,6 +8,8 @@ project_root = Path(__file__).parent.parent.parent
 sys.path.insert(0, str(project_root))
 
 from utils.Continuous_functions import rastrigin
+# Use the repository's ACOR visualization utilities (they include
+# convergence and animated convergence helpers used by examples).
 from algo1_ACO.rastrigin.visualization import (
     plot_convergence, plot_rastrigin_surface_2d, plot_animated_convergence,
     plot_animated_convergence_simple,
@@ -31,6 +33,11 @@ class ABC_Solver:
         self.pop = pop_size
         self.n_iterations = n_iterations
         self.limit = limit
+        # whether to keep archive history for visualization (can be memory heavy)
+        self.track_archive = bool(track_archive)
+        # tuning parameters to improve accuracy
+        self.selection_pressure = 2.0  # exponent on quality to sharpen selection
+        self.local_search_steps = 3    # small greedy refinements when improvement found
 
         # population archive: (pop, n_dims + 1) -> [x..., cost]
         self.archive = np.zeros((self.pop, self.n_dims + 1))
@@ -42,8 +49,25 @@ class ABC_Solver:
         self.archive_history = []
 
     def _initialize(self):
+        # Use a simple Latin-hypercube like spread to initialize population for
+        # better coverage of the search space which often improves optimizer accuracy.
+        if self.pop > 1:
+            # create evenly spaced samples per-dimension and shuffle per-dim
+            cut = np.linspace(0, 1, self.pop + 1)
+            rng = np.random.rand(self.pop, self.n_dims)
+            pts = np.zeros((self.pop, self.n_dims))
+            for d in range(self.n_dims):
+                intervals = cut[:-1] + rng[:, d] * (cut[1] - cut[0])
+                np.random.shuffle(intervals)
+                pts[:, d] = intervals
+
+            # map unit hypercube to bounds
+            sols = self.bounds_low + pts * (self.bounds_high - self.bounds_low)
+        else:
+            sols = np.random.uniform(self.bounds_low, self.bounds_high, (1, self.n_dims))
+
         for i in range(self.pop):
-            sol = np.random.uniform(self.bounds_low, self.bounds_high, self.n_dims)
+            sol = sols[i]
             cost = self.cost_function(sol)
             self.archive[i, :-1] = sol
             self.archive[i, -1] = cost
@@ -60,14 +84,24 @@ class ABC_Solver:
         np.random.seed(42)
         self._initialize()
 
-        if len(self.archive) > 0:
+        # record initial archive only when requested
+        if self.track_archive and len(self.archive) > 0:
             self.archive_history.append(self.archive.copy())
 
         for gen in range(1, self.n_iterations + 1):
+            # adaptive scale for neighborhood moves: shrink over time
+            progress = (gen - 1) / max(1, self.n_iterations)
+            move_scale = 0.5 * (1.0 - progress) + 0.05
             # Employed bees
             for i in range(self.pop):
-                k = np.random.choice(np.delete(np.arange(self.pop), i))
-                phi = np.random.uniform(-1, 1, self.n_dims)
+                # select a partner different from i (if possible)
+                if self.pop > 1:
+                    choices = np.delete(np.arange(self.pop), i)
+                    k = np.random.choice(choices)
+                else:
+                    k = i
+                # sample a controlled perturbation; scale shrinks as iterations progress
+                phi = np.random.uniform(-1, 1, self.n_dims) * move_scale
                 xi = self.archive[i, :-1]
                 xk = self.archive[k, :-1]
                 v = xi + phi * (xi - xk)
@@ -77,18 +111,45 @@ class ABC_Solver:
                     self.archive[i, :-1] = v
                     self.archive[i, -1] = v_cost
                     self.trial_counts[i] = 0
+                    # small local greedy refinement to reduce cost further
+                    for _ in range(self.local_search_steps):
+                        delta = np.random.normal(scale=0.2 * move_scale, size=self.n_dims) * (self.bounds_high - self.bounds_low)
+                        cand = np.clip(self.archive[i, :-1] + delta, self.bounds_low, self.bounds_high)
+                        cand_cost = self.cost_function(cand)
+                        if cand_cost < self.archive[i, -1]:
+                            self.archive[i, :-1] = cand
+                            self.archive[i, -1] = cand_cost
+                            # reset trial count after local improvement
+                            self.trial_counts[i] = 0
                 else:
                     self.trial_counts[i] += 1
 
             # Onlooker bees
             fitness = self.archive[:, -1]
+            # convert fitness to selection probability (higher quality -> higher prob)
             quality = 1.0 / (1.0 + fitness + 1e-12)
-            prob = quality / np.sum(quality)
+            # apply selection pressure to focus on good solutions
+            quality = np.power(quality, self.selection_pressure)
+            total_q = np.sum(quality)
+            if total_q <= 0 or not np.isfinite(total_q):
+                prob = np.full(self.pop, 1.0 / max(1, self.pop))
+            else:
+                prob = quality / total_q
 
             for _ in range(self.pop):
-                i = np.random.choice(self.pop, p=prob)
-                k = np.random.choice(np.delete(np.arange(self.pop), i))
-                phi = np.random.uniform(-1, 1, self.n_dims)
+                # select an index according to probability distribution
+                try:
+                    i = np.random.choice(self.pop, p=prob)
+                except Exception:
+                    # fallback to uniform selection
+                    i = np.random.randint(0, self.pop)
+                # choose a partner different from i when possible
+                if self.pop > 1:
+                    k_choices = np.delete(np.arange(self.pop), i)
+                    k = np.random.choice(k_choices)
+                else:
+                    k = i
+                phi = np.random.uniform(-1, 1, self.n_dims) * move_scale
                 xi = self.archive[i, :-1]
                 xk = self.archive[k, :-1]
                 v = xi + phi * (xi - xk)
@@ -98,13 +159,27 @@ class ABC_Solver:
                     self.archive[i, :-1] = v
                     self.archive[i, -1] = v_cost
                     self.trial_counts[i] = 0
+                    # local refinement
+                    for _ in range(self.local_search_steps):
+                        delta = np.random.normal(scale=0.2 * move_scale, size=self.n_dims) * (self.bounds_high - self.bounds_low)
+                        cand = np.clip(self.archive[i, :-1] + delta, self.bounds_low, self.bounds_high)
+                        cand_cost = self.cost_function(cand)
+                        if cand_cost < self.archive[i, -1]:
+                            self.archive[i, :-1] = cand
+                            self.archive[i, -1] = cand_cost
+                            self.trial_counts[i] = 0
                 else:
                     self.trial_counts[i] += 1
 
             # Scout phase
             for i in range(self.pop):
                 if self.trial_counts[i] > self.limit:
-                    new_sol = np.random.uniform(self.bounds_low, self.bounds_high, self.n_dims)
+                    # scout: restart near current best solution (more effective than uniform random)
+                    # get current best
+                    best_pos = self.archive[0, :-1].copy()
+                    # decreasing exploration radius
+                    sigma = (0.5 * (1.0 - progress) + 0.01) * (self.bounds_high - self.bounds_low)
+                    new_sol = np.clip(best_pos + np.random.normal(scale=sigma, size=self.n_dims), self.bounds_low, self.bounds_high)
                     self.archive[i, :-1] = new_sol
                     self.archive[i, -1] = self.cost_function(new_sol)
                     self.trial_counts[i] = 0
@@ -112,7 +187,7 @@ class ABC_Solver:
             # Update best and archive
             self._sort_archive()
             self.convergence_history.append(self.best_cost)
-            if len(self.archive_history) >= 0:
+            if self.track_archive:
                 self.archive_history.append(self.archive.copy())
 
             if gen % 50 == 0:

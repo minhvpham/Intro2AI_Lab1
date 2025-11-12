@@ -1648,3 +1648,30 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+def save_cuckoo_convergence(history, filename="results/cuckoo_convergence.png"):
+    """
+    Plot and save the convergence curve (best cost vs. iteration) for Cuckoo Search.
+    - history: list/array of best costs per iteration
+    - filename: output PNG path
+    """
+    import os
+    import matplotlib.pyplot as plt
+    os.makedirs(os.path.dirname(filename), exist_ok=True)
+    fig, ax = plt.subplots(figsize=(7, 4), dpi=120)
+    ax.plot(history, color='crimson', linewidth=2)
+    ax.set_title('Cuckoo Search Convergence')
+    ax.set_xlabel('Iteration')
+    ax.set_ylabel('Best Cost')
+    ax.grid(True, alpha=0.3)
+    plt.tight_layout()
+    plt.savefig(filename)
+    plt.close(fig)
+    print(f"✅ Convergence plot saved to {filename}")
+
+# --- DEMO USAGE ---
+if __name__ == "__main__":
+    # ...existing code...
+    # Demo: random convergence history
+    history = [100/(i+1) + np.random.rand()*2 for i in range(100)]
+    save_cuckoo_convergence(history, filename="results/cuckoo_convergence_demo.png")
