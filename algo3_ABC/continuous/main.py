@@ -8,6 +8,8 @@ project_root = Path(__file__).parent.parent.parent
 sys.path.insert(0, str(project_root))
 
 from utils.Continuous_functions import rastrigin
+# Use the repository's ACOR visualization utilities (they include
+# convergence and animated convergence helpers used by examples).
 from algo1_ACO.rastrigin.visualization import (
     plot_convergence, plot_rastrigin_surface_2d, plot_animated_convergence,
     plot_animated_convergence_simple,
