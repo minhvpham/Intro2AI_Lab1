@@ -14,6 +14,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 import time
 import sys
+sys.stdout.reconfigure(encoding='utf-8')
 import os
 from Continuous_functions import rastrigin
 from tsp import create_cities

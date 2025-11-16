@@ -1,0 +1,2246 @@
+
+################################################################################
+#                                                                              #
+#          COMPREHENSIVE ALGORITHM COMPARISON WITH ADVANCED METRICS            #
+#                                                                              #
+################################################################################
+
+
+▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓
+▓ PART 1: CONTINUOUS OPTIMIZATION (Rastrigin Function)
+▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓
+
+================================================================================
+CONTINUOUS OPTIMIZATION COMPARISON: Rastrigin Function (5D)
+Running 5 independent trials for robustness analysis
+================================================================================
+
+[1/4] Running Hill Climbing...
+  Trial 1/5... 
+Running Hill Climbing with 10 restarts...
+  Restart 1/10 - Local minimum: 30.843594
+  Restart 2/10 - Local minimum: 29.848635
+  Restart 3/10 - Local minimum: 68.651607
+  Restart 4/10 - Local minimum: 8.954621
+  Restart 5/10 - Local minimum: 14.924351
+  Restart 6/10 - Local minimum: 34.823405
+  Restart 7/10 - Local minimum: 66.661771
+  Restart 8/10 - Local minimum: 32.833507
+  Restart 9/10 - Local minimum: 60.692042
+  Restart 10/10 - Local minimum: 8.954621
+Hill Climbing completed. Best cost: 8.954621
+Cost: 8.954621
+  Trial 2/5... 
+Running Hill Climbing with 10 restarts...
+  Restart 1/10 - Local minimum: 66.661771
+  Restart 2/10 - Local minimum: 60.692164
+  Restart 3/10 - Local minimum: 14.924351
+  Restart 4/10 - Local minimum: 58.702169
+  Restart 5/10 - Local minimum: 50.742588
+  Restart 6/10 - Local minimum: 45.767879
+  Restart 7/10 - Local minimum: 30.843594
+  Restart 8/10 - Local minimum: 24.873865
+  Restart 9/10 - Local minimum: 32.833507
+  Restart 10/10 - Local minimum: 40.792967
+Hill Climbing completed. Best cost: 14.924351
+Cost: 14.924351
+  Trial 3/5... 
+Running Hill Climbing with 10 restarts...
+  Restart 1/10 - Local minimum: 45.767757
+  Restart 2/10 - Local minimum: 33.828466
+  Restart 3/10 - Local minimum: 38.803237
+  Restart 4/10 - Local minimum: 49.747690
+  Restart 5/10 - Local minimum: 53.727521
+  Restart 6/10 - Local minimum: 34.823283
+  Restart 7/10 - Local minimum: 42.783007
+  Restart 8/10 - Local minimum: 33.828344
+  Restart 9/10 - Local minimum: 12.934453
+  Restart 10/10 - Local minimum: 20.894034
+Hill Climbing completed. Best cost: 12.934453
+Cost: 12.934453
+  Trial 4/5... 
+Running Hill Climbing with 10 restarts...
+  Restart 1/10 - Local minimum: 53.727399
+  Restart 2/10 - Local minimum: 19.899156
+  Restart 3/10 - Local minimum: 18.904121
+  Restart 4/10 - Local minimum: 38.803237
+  Restart 5/10 - Local minimum: 38.803114
+  Restart 6/10 - Local minimum: 38.803237
+  Restart 7/10 - Local minimum: 52.732522
+  Restart 8/10 - Local minimum: 4.974790
+  Restart 9/10 - Local minimum: 49.747649
+  Restart 10/10 - Local minimum: 45.767879
+Hill Climbing completed. Best cost: 4.974790
+Cost: 4.974790
+  Trial 5/5... 
+Running Hill Climbing with 10 restarts...
+  Restart 1/10 - Local minimum: 27.858722
+  Restart 2/10 - Local minimum: 75.616250
+  Restart 3/10 - Local minimum: 17.909223
+  Restart 4/10 - Local minimum: 21.889054
+  Restart 5/10 - Local minimum: 21.888993
+  Restart 6/10 - Local minimum: 46.762716
+  Restart 7/10 - Local minimum: 18.904162
+  Restart 8/10 - Local minimum: 38.803114
+  Restart 9/10 - Local minimum: 57.707170
+  Restart 10/10 - Local minimum: 49.747568
+Hill Climbing completed. Best cost: 17.909223
+Cost: 17.909223
+
+[2/4] Running Genetic Algorithm...
+  Trial 1/5... 
+Running Genetic Algorithm for 100 generations...
+  Generation 20/100 - Best fitness: 7.652331
+  Generation 40/100 - Best fitness: 1.999992
+  Generation 60/100 - Best fitness: 0.154788
+  Generation 80/100 - Best fitness: 0.007041
+  Generation 100/100 - Best fitness: 0.000036
+Genetic Algorithm completed. Best cost: 0.000036
+Cost: 0.000036
+  Trial 2/5... 
+Running Genetic Algorithm for 100 generations...
+  Generation 20/100 - Best fitness: 3.802362
+  Generation 40/100 - Best fitness: 1.224542
+  Generation 60/100 - Best fitness: 0.004453
+  Generation 80/100 - Best fitness: 0.002078
+  Generation 100/100 - Best fitness: 0.001371
+Genetic Algorithm completed. Best cost: 0.001371
+Cost: 0.001371
+  Trial 3/5... 
+Running Genetic Algorithm for 100 generations...
+  Generation 20/100 - Best fitness: 3.276672
+  Generation 40/100 - Best fitness: 1.064314
+  Generation 60/100 - Best fitness: 0.012228
+  Generation 80/100 - Best fitness: 0.000392
+  Generation 100/100 - Best fitness: 0.000034
+Genetic Algorithm completed. Best cost: 0.000034
+Cost: 0.000034
+  Trial 4/5... 
+Running Genetic Algorithm for 100 generations...
+  Generation 20/100 - Best fitness: 4.655255
+  Generation 40/100 - Best fitness: 2.027209
+  Generation 60/100 - Best fitness: 0.018789
+  Generation 80/100 - Best fitness: 0.000015
+  Generation 100/100 - Best fitness: 0.000000
+Genetic Algorithm completed. Best cost: 0.000000
+Cost: 0.000000
+  Trial 5/5... 
+Running Genetic Algorithm for 100 generations...
+  Generation 20/100 - Best fitness: 3.555979
+  Generation 40/100 - Best fitness: 1.722971
+  Generation 60/100 - Best fitness: 1.075828
+  Generation 80/100 - Best fitness: 0.996503
+  Generation 100/100 - Best fitness: 0.001781
+Genetic Algorithm completed. Best cost: 0.001781
+Cost: 0.001781
+
+[3/4] Running ACOR (Swarm Intelligence)...
+  Trial 1/5... Cost: 3.837614
+  Trial 2/5... Cost: 3.757991
+  Trial 3/5... Cost: 10.219100
+  Trial 4/5... Cost: 9.305249
+  Trial 5/5... Cost: 5.207782
+
+[4/5] Running PSO (Swarm Intelligence)...
+  Trial 1/5... Cost: 9.955021
+  Trial 2/5... Cost: 7.959662
+  Trial 3/5... Cost: 5.969792
+  Trial 4/5... Cost: 9.949589
+  Trial 5/5... Cost: 0.994959
+
+[5/6] Running Firefly Algorithm (Swarm Intelligence)...
+  Trial 1/5... Iteration 0: Best Fitness = 32.0106081151627
+Iteration 10: Best Fitness = 25.117252231939908
+Iteration 20: Best Fitness = 18.731106552036614
+Iteration 30: Best Fitness = 17.451452470578275
+Iteration 40: Best Fitness = 17.451452470578275
+Iteration 50: Best Fitness = 17.451452470578275
+Iteration 60: Best Fitness = 13.64504674300953
+Iteration 70: Best Fitness = 13.252174177240406
+Iteration 80: Best Fitness = 13.195788359047484
+Iteration 90: Best Fitness = 12.588365242637188
+Optimization finished in 0.56s
+Final Best Position: [-1.96034233  0.00592733 -1.95234059 -0.99004315 -1.01897564]
+Final Best Fitness: 10.524457938933132
+Cost: 10.524458
+  Trial 2/5... Iteration 0: Best Fitness = 46.53830387851741
+Iteration 10: Best Fitness = 26.03938716914898
+Iteration 20: Best Fitness = 19.5183096347466
+Iteration 30: Best Fitness = 19.5183096347466
+Iteration 40: Best Fitness = 19.5183096347466
+Iteration 50: Best Fitness = 19.5183096347466
+Iteration 60: Best Fitness = 16.937180846817377
+Iteration 70: Best Fitness = 16.937180846817377
+Iteration 80: Best Fitness = 14.595679151612998
+Iteration 90: Best Fitness = 14.595679151612998
+Optimization finished in 0.48s
+Final Best Position: [ 0.01868692  0.98244791  1.04013978 -0.98816683  3.06245172]
+Final Best Fitness: 13.636155856236115
+Cost: 13.636156
+  Trial 3/5... Iteration 0: Best Fitness = 45.14890069151373
+Iteration 10: Best Fitness = 24.95616668776377
+Iteration 20: Best Fitness = 14.980011527409104
+Iteration 30: Best Fitness = 14.980011527409104
+Iteration 40: Best Fitness = 13.574211521806994
+Iteration 50: Best Fitness = 13.574211521806994
+Iteration 60: Best Fitness = 13.574211521806994
+Iteration 70: Best Fitness = 11.039481687678112
+Iteration 80: Best Fitness = 6.4639771618650315
+Iteration 90: Best Fitness = 5.785658316234716
+Optimization finished in 0.46s
+Final Best Position: [ 0.95364152  0.03173557 -0.00815596 -0.01370538  1.04989675]
+Final Best Fitness: 3.1699624275131058
+Cost: 3.169962
+  Trial 4/5... Iteration 0: Best Fitness = 47.482529959556985
+Iteration 10: Best Fitness = 12.590500657684672
+Iteration 20: Best Fitness = 12.590500657684672
+Iteration 30: Best Fitness = 7.084892289046408
+Iteration 40: Best Fitness = 7.084892289046408
+Iteration 50: Best Fitness = 7.084892289046408
+Iteration 60: Best Fitness = 7.084892289046408
+Iteration 70: Best Fitness = 4.341056120827332
+Iteration 80: Best Fitness = 4.341056120827332
+Iteration 90: Best Fitness = 4.341056120827332
+Optimization finished in 0.49s
+Final Best Position: [0.02250429 0.97174586 1.00441292 0.9729543  0.04045537]
+Final Best Fitness: 3.6280903899645125
+Cost: 3.628090
+  Trial 5/5... Iteration 0: Best Fitness = 50.315753586902076
+Iteration 10: Best Fitness = 29.055998319380024
+Iteration 20: Best Fitness = 29.055998319380024
+Iteration 30: Best Fitness = 22.828080514979156
+Iteration 40: Best Fitness = 9.754289142151869
+Iteration 50: Best Fitness = 9.754289142151869
+Iteration 60: Best Fitness = 9.754289142151869
+Iteration 70: Best Fitness = 9.754289142151869
+Iteration 80: Best Fitness = 8.948348418589887
+Iteration 90: Best Fitness = 8.948348418589887
+Optimization finished in 0.46s
+Final Best Position: [-1.06336048  0.9832877  -1.00211371  2.01509098  0.03813392]
+Final Best Fitness: 8.332456746860316
+Cost: 8.332457
+
+[6/7] Running Artificial Bee Colony (Swarm Intelligence)...
+  Trial 1/5... Gen 50: Best Cost = 7.335843e+00
+Gen 100: Best Cost = 4.115665e+00
+Cost: 4.115665
+  Trial 2/5... Gen 50: Best Cost = 7.335843e+00
+Gen 100: Best Cost = 4.115665e+00
+Cost: 4.115665
+  Trial 3/5... Gen 50: Best Cost = 7.335843e+00
+Gen 100: Best Cost = 4.115665e+00
+Cost: 4.115665
+  Trial 4/5... Gen 50: Best Cost = 7.335843e+00
+Gen 100: Best Cost = 4.115665e+00
+Cost: 4.115665
+  Trial 5/5... Gen 50: Best Cost = 7.335843e+00
+Gen 100: Best Cost = 4.115665e+00
+Cost: 4.115665
+
+[7/7] Running Cuckoo Search (Swarm Intelligence)...
+  Trial 1/5... Gen 10/100: Best = 2.856427e+01
+Gen 20/100: Best = 2.042966e+01
+Gen 30/100: Best = 1.979979e+01
+Gen 40/100: Best = 1.663795e+01
+Gen 50/100: Best = 1.338214e+01
+Gen 60/100: Best = 1.072451e+01
+Gen 70/100: Best = 7.451872e+00
+Gen 80/100: Best = 5.431715e+00
+Gen 90/100: Best = 3.534644e+00
+Gen 100/100: Best = 3.411199e+00
+Cost: 3.411199
+  Trial 2/5... Gen 10/100: Best = 2.856427e+01
+Gen 20/100: Best = 2.042966e+01
+Gen 30/100: Best = 1.979979e+01
+Gen 40/100: Best = 1.663795e+01
+Gen 50/100: Best = 1.338214e+01
+Gen 60/100: Best = 1.072451e+01
+Gen 70/100: Best = 7.451872e+00
+Gen 80/100: Best = 5.431715e+00
+Gen 90/100: Best = 3.534644e+00
+Gen 100/100: Best = 3.411199e+00
+Cost: 3.411199
+  Trial 3/5... Gen 10/100: Best = 2.856427e+01
+Gen 20/100: Best = 2.042966e+01
+Gen 30/100: Best = 1.979979e+01
+Gen 40/100: Best = 1.663795e+01
+Gen 50/100: Best = 1.338214e+01
+Gen 60/100: Best = 1.072451e+01
+Gen 70/100: Best = 7.451872e+00
+Gen 80/100: Best = 5.431715e+00
+Gen 90/100: Best = 3.534644e+00
+Gen 100/100: Best = 3.411199e+00
+Cost: 3.411199
+  Trial 4/5... Gen 10/100: Best = 2.856427e+01
+Gen 20/100: Best = 2.042966e+01
+Gen 30/100: Best = 1.979979e+01
+Gen 40/100: Best = 1.663795e+01
+Gen 50/100: Best = 1.338214e+01
+Gen 60/100: Best = 1.072451e+01
+Gen 70/100: Best = 7.451872e+00
+Gen 80/100: Best = 5.431715e+00
+Gen 90/100: Best = 3.534644e+00
+Gen 100/100: Best = 3.411199e+00
+Cost: 3.411199
+  Trial 5/5... Gen 10/100: Best = 2.856427e+01
+Gen 20/100: Best = 2.042966e+01
+Gen 30/100: Best = 1.979979e+01
+Gen 40/100: Best = 1.663795e+01
+Gen 50/100: Best = 1.338214e+01
+Gen 60/100: Best = 1.072451e+01
+Gen 70/100: Best = 7.451872e+00
+Gen 80/100: Best = 5.431715e+00
+Gen 90/100: Best = 3.534644e+00
+Gen 100/100: Best = 3.411199e+00
+Cost: 3.411199
+
+================================================================================
+CONTINUOUS OPTIMIZATION (Rastrigin 5D) - RESULTS SUMMARY
+================================================================================
+Algorithm                 Best Cost       Time (s)     Notes
+--------------------------------------------------------------------------------
+Hill Climbing             4.974790        0.158        restarts=10
+Genetic Algorithm         0.000000        0.191        population=50, generations=100
+ACOR (Swarm)              3.757991        0.420        archive_size=30, iterations=100
+PSO (Swarm)               0.994959        0.010        particles=20, iterations=100
+Firefly (Swarm)           3.169962        0.459        fireflies=30, iterations=100
+ABC (Swarm)               4.115665        0.432        population=50, iterations=100, limit=20
+CS (Swarm)                3.411199        0.095        nests=50, iterations=100, discovery_rate=0.25
+--------------------------------------------------------------------------------
+Best Algorithm: Genetic Algorithm (Cost: 0.000000)
+================================================================================
+
+========================================================================================================================
+CONTINUOUS OPTIMIZATION (Rastrigin 5D) - COMPREHENSIVE METRICS ANALYSIS
+========================================================================================================================
+Algorithm            Best Cost    Time(s)    Conv.Speed   Robustness      Memory(MB)  
+------------------------------------------------------------------------------------------------------------------------
+Hill Climbing        4.974790     0.158      1158         CV=0.3801       N/A         
+Genetic Algorithm    0.000000     0.191      100          CV=1.1975       N/A         
+ACOR (Swarm)         3.757991     0.420      40           CV=0.4262       N/A         
+PSO (Swarm)          0.994959     0.010      40           CV=0.4782       N/A         
+Firefly (Swarm)      3.169962     0.459      100          CV=0.5109       N/A         
+ABC (Swarm)          4.115665     0.432      95           CV=0.0000       N/A         
+CS (Swarm)           3.411199     0.095      88           CV=0.0000       N/A         
+========================================================================================================================
+
+Metric Definitions:
+  - Best Cost: Lowest objective function value achieved
+  - Time(s): Computational time in seconds
+  - Conv.Speed: Iterations needed to reach 90% of final solution quality (lower is faster)
+  - Robustness: Coefficient of Variation (std/mean) across multiple runs (lower is more robust)
+  - Memory(MB): Peak memory usage during execution
+========================================================================================================================
+
+====================================================================================================
+CONTINUOUS OPTIMIZATION - COMPUTATIONAL COMPLEXITY ANALYSIS
+====================================================================================================
+Algorithm                 Time Complexity                Space Complexity              
+----------------------------------------------------------------------------------------------------
+Hill Climbing             O(n × k × d)                   O(d)                          
+Genetic Algorithm         O(g × p × d)                   O(p × d)                      
+ACOR (Swarm)              O(i × k × d²)                  O(k × d)                      
+PSO (Swarm)               O(i × p × d)                   O(p × d)                      
+Firefly (Swarm)           O(i × n² × d)                  O(n × d)                      
+ABC (Swarm)               O(i × n × d)                   O(n × d)                      
+CS (Swarm)                O(i × n × d)                   O(n × d)                      
+====================================================================================================
+
+Notation:
+  n = problem size (dimensions or cities)
+  d = dimensions
+  i = iterations
+  p = population size
+  k = archive/sample size
+  g = generations
+  a = number of ants
+  b = branching factor
+====================================================================================================
+Plot saved to: comparison_rastrigin_convergence.png
+Plot saved to: comparison_rastrigin_bars.png
+Convergence speed plot saved to: comparison_rastrigin_convergence_speed.png
+
+📊 Generating robustness analysis for 7 algorithm(s) with multiple runs...
+Robustness plot saved to: comparison_rastrigin_robustness.png
+
+▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓
+▓ SCALABILITY ANALYSIS: Testing Different Problem Dimensions
+▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓
+
+================================================================================
+SCALABILITY ANALYSIS: Rastrigin Function - Dimensionality
+================================================================================
+
+Testing problem size: 2
+
+================================================================================
+CONTINUOUS OPTIMIZATION COMPARISON: Rastrigin Function (2D)
+================================================================================
+
+[1/4] Running Hill Climbing...
+
+Running Hill Climbing with 10 restarts...
+  Restart 1/10 - Local minimum: 19.899075
+  Restart 2/10 - Local minimum: 31.838488
+  Restart 3/10 - Local minimum: 15.919244
+  Restart 4/10 - Local minimum: 24.873845
+  Restart 5/10 - Local minimum: 3.979831
+  Restart 6/10 - Local minimum: 15.919244
+  Restart 7/10 - Local minimum: 7.959662
+  Restart 8/10 - Local minimum: 1.989918
+  Restart 9/10 - Local minimum: 24.873723
+  Restart 10/10 - Local minimum: 17.909202
+Hill Climbing completed. Best cost: 1.989918
+
+[2/4] Running Genetic Algorithm...
+
+Running Genetic Algorithm for 100 generations...
+  Generation 20/100 - Best fitness: 0.000002
+  Generation 40/100 - Best fitness: 0.000000
+  Generation 60/100 - Best fitness: 0.000000
+  Generation 80/100 - Best fitness: 0.000000
+  Generation 100/100 - Best fitness: 0.000000
+Genetic Algorithm completed. Best cost: 0.000000
+
+[3/4] Running ACOR (Swarm Intelligence)...
+
+[4/5] Running PSO (Swarm Intelligence)...
+
+[5/6] Running Firefly Algorithm (Swarm Intelligence)...
+Iteration 0: Best Fitness = 2.451430855832381
+Iteration 10: Best Fitness = 2.451430855832381
+Iteration 20: Best Fitness = 0.36665793158923776
+Iteration 30: Best Fitness = 0.1863127263090263
+Iteration 40: Best Fitness = 0.1863127263090263
+Iteration 50: Best Fitness = 0.1863127263090263
+Iteration 60: Best Fitness = 0.1863127263090263
+Iteration 70: Best Fitness = 0.1863127263090263
+Iteration 80: Best Fitness = 0.1863127263090263
+Iteration 90: Best Fitness = 0.007226451379473531
+Optimization finished in 0.48s
+Final Best Position: [ 0.00208908 -0.00566253]
+Final Best Fitness: 0.007226451379473531
+
+[6/7] Running Artificial Bee Colony (Swarm Intelligence)...
+Gen 50: Best Cost = 2.055323e-02
+Gen 100: Best Cost = 1.062943e-02
+
+[7/7] Running Cuckoo Search (Swarm Intelligence)...
+Gen 10/100: Best = 7.870560e+00
+Gen 20/100: Best = 6.572668e+00
+Gen 30/100: Best = 4.656629e+00
+Gen 40/100: Best = 3.301371e+00
+Gen 50/100: Best = 2.323101e+00
+Gen 60/100: Best = 1.248553e+00
+Gen 70/100: Best = 9.971829e-01
+Gen 80/100: Best = 9.954704e-01
+Gen 90/100: Best = 9.954704e-01
+Gen 100/100: Best = 9.954704e-01
+
+Testing problem size: 5
+
+================================================================================
+CONTINUOUS OPTIMIZATION COMPARISON: Rastrigin Function (5D)
+================================================================================
+
+[1/4] Running Hill Climbing...
+
+Running Hill Climbing with 10 restarts...
+  Restart 1/10 - Local minimum: 18.904182
+  Restart 2/10 - Local minimum: 66.661771
+  Restart 3/10 - Local minimum: 50.742527
+  Restart 4/10 - Local minimum: 43.777884
+  Restart 5/10 - Local minimum: 40.793089
+  Restart 6/10 - Local minimum: 1.989918
+  Restart 7/10 - Local minimum: 17.909223
+  Restart 8/10 - Local minimum: 31.838569
+  Restart 9/10 - Local minimum: 57.707292
+  Restart 10/10 - Local minimum: 49.747568
+Hill Climbing completed. Best cost: 1.989918
+
+[2/4] Running Genetic Algorithm...
+
+Running Genetic Algorithm for 100 generations...
+  Generation 20/100 - Best fitness: 7.942059
+  Generation 40/100 - Best fitness: 2.941382
+  Generation 60/100 - Best fitness: 1.052753
+  Generation 80/100 - Best fitness: 0.153365
+  Generation 100/100 - Best fitness: 0.031706
+Genetic Algorithm completed. Best cost: 0.031706
+
+[3/4] Running ACOR (Swarm Intelligence)...
+
+[4/5] Running PSO (Swarm Intelligence)...
+
+[5/6] Running Firefly Algorithm (Swarm Intelligence)...
+Iteration 0: Best Fitness = 17.476507220542793
+Iteration 10: Best Fitness = 17.476507220542793
+Iteration 20: Best Fitness = 17.476507220542793
+Iteration 30: Best Fitness = 17.476507220542793
+Iteration 40: Best Fitness = 10.592655879934824
+Iteration 50: Best Fitness = 10.592655879934824
+Iteration 60: Best Fitness = 10.592655879934824
+Iteration 70: Best Fitness = 10.592655879934824
+Iteration 80: Best Fitness = 10.592655879934824
+Iteration 90: Best Fitness = 10.592655879934824
+Optimization finished in 0.49s
+Final Best Position: [ 1.97425647  1.931448   -0.0246862   0.98629911  0.03889932]
+Final Best Fitness: 10.10127103517172
+
+[6/7] Running Artificial Bee Colony (Swarm Intelligence)...
+Gen 50: Best Cost = 7.335843e+00
+Gen 100: Best Cost = 4.115665e+00
+
+[7/7] Running Cuckoo Search (Swarm Intelligence)...
+Gen 10/100: Best = 2.856427e+01
+Gen 20/100: Best = 2.042966e+01
+Gen 30/100: Best = 1.979979e+01
+Gen 40/100: Best = 1.663795e+01
+Gen 50/100: Best = 1.338214e+01
+Gen 60/100: Best = 1.072451e+01
+Gen 70/100: Best = 7.451872e+00
+Gen 80/100: Best = 5.431715e+00
+Gen 90/100: Best = 3.534644e+00
+Gen 100/100: Best = 3.411199e+00
+
+Testing problem size: 10
+
+================================================================================
+CONTINUOUS OPTIMIZATION COMPARISON: Rastrigin Function (10D)
+================================================================================
+
+[1/4] Running Hill Climbing...
+
+Running Hill Climbing with 10 restarts...
+  Restart 1/10 - Local minimum: 96.510483
+  Restart 2/10 - Local minimum: 68.651750
+  Restart 3/10 - Local minimum: 72.631621
+  Restart 4/10 - Local minimum: 125.363940
+  Restart 5/10 - Local minimum: 36.813222
+  Restart 6/10 - Local minimum: 58.702271
+  Restart 7/10 - Local minimum: 83.576055
+  Restart 8/10 - Local minimum: 97.505365
+  Restart 9/10 - Local minimum: 58.702235
+  Restart 10/10 - Local minimum: 64.671878
+Hill Climbing completed. Best cost: 36.813222
+
+[2/4] Running Genetic Algorithm...
+
+Running Genetic Algorithm for 100 generations...
+  Generation 20/100 - Best fitness: 32.439740
+  Generation 40/100 - Best fitness: 9.328354
+  Generation 60/100 - Best fitness: 6.692118
+  Generation 80/100 - Best fitness: 4.685567
+  Generation 100/100 - Best fitness: 3.681374
+Genetic Algorithm completed. Best cost: 3.681374
+
+[3/4] Running ACOR (Swarm Intelligence)...
+
+[4/5] Running PSO (Swarm Intelligence)...
+
+[5/6] Running Firefly Algorithm (Swarm Intelligence)...
+Iteration 0: Best Fitness = 106.34116466742542
+Iteration 10: Best Fitness = 55.33078180099995
+Iteration 20: Best Fitness = 55.33078180099995
+Iteration 30: Best Fitness = 55.33078180099995
+Iteration 40: Best Fitness = 48.26968039478648
+Iteration 50: Best Fitness = 40.2674889060592
+Iteration 60: Best Fitness = 40.2674889060592
+Iteration 70: Best Fitness = 40.2674889060592
+Iteration 80: Best Fitness = 34.57770188164609
+Iteration 90: Best Fitness = 32.44649732880309
+Optimization finished in 0.47s
+Final Best Position: [ 0.97920385  0.05062682  1.93740117  1.00558724 -0.04088395  0.00227537
+ -0.08534    -0.92394075  0.01131445 -0.87515317]
+Final Best Fitness: 14.511811152007141
+
+[6/7] Running Artificial Bee Colony (Swarm Intelligence)...
+Gen 50: Best Cost = 4.775328e+01
+Gen 100: Best Cost = 2.270971e+01
+
+[7/7] Running Cuckoo Search (Swarm Intelligence)...
+Gen 10/100: Best = 1.177949e+02
+Gen 20/100: Best = 1.010102e+02
+Gen 30/100: Best = 8.652146e+01
+Gen 40/100: Best = 8.350247e+01
+Gen 50/100: Best = 7.706293e+01
+Gen 60/100: Best = 6.964737e+01
+Gen 70/100: Best = 6.791572e+01
+Gen 80/100: Best = 6.222673e+01
+Gen 90/100: Best = 5.768790e+01
+Gen 100/100: Best = 5.382286e+01
+
+Testing problem size: 15
+
+================================================================================
+CONTINUOUS OPTIMIZATION COMPARISON: Rastrigin Function (15D)
+================================================================================
+
+[1/4] Running Hill Climbing...
+
+Running Hill Climbing with 10 restarts...
+  Restart 1/10 - Local minimum: 119.394400
+  Restart 2/10 - Local minimum: 184.066043
+  Restart 3/10 - Local minimum: 124.369123
+  Restart 4/10 - Local minimum: 119.394298
+  Restart 5/10 - Local minimum: 72.631586
+  Restart 6/10 - Local minimum: 153.222662
+  Restart 7/10 - Local minimum: 74.621662
+  Restart 8/10 - Local minimum: 128.349016
+  Restart 9/10 - Local minimum: 92.530684
+  Restart 10/10 - Local minimum: 139.293291
+Hill Climbing completed. Best cost: 72.631586
+
+[2/4] Running Genetic Algorithm...
+
+Running Genetic Algorithm for 100 generations...
+  Generation 20/100 - Best fitness: 89.755880
+  Generation 40/100 - Best fitness: 57.195820
+  Generation 60/100 - Best fitness: 39.988420
+  Generation 80/100 - Best fitness: 30.339030
+  Generation 100/100 - Best fitness: 27.251077
+Genetic Algorithm completed. Best cost: 27.251077
+
+[3/4] Running ACOR (Swarm Intelligence)...
+
+[4/5] Running PSO (Swarm Intelligence)...
+
+[5/6] Running Firefly Algorithm (Swarm Intelligence)...
+Iteration 0: Best Fitness = 130.86279572005364
+Iteration 10: Best Fitness = 130.86279572005364
+Iteration 20: Best Fitness = 130.29281954822125
+Iteration 30: Best Fitness = 130.29281954822125
+Iteration 40: Best Fitness = 130.29281954822125
+Iteration 50: Best Fitness = 124.76128486680719
+Iteration 60: Best Fitness = 118.27582330747134
+Iteration 70: Best Fitness = 111.55408137634106
+Iteration 80: Best Fitness = 95.99885523834591
+Iteration 90: Best Fitness = 84.56431154956371
+Optimization finished in 0.55s
+Final Best Position: [-2.04154464  0.9457372   0.96618368 -0.01682816  1.28502743  0.89939731
+  0.06396917 -1.92110323  0.10882583  0.98021815 -0.11427696  1.95159176
+  0.02770736 -5.12       -3.00846871]
+Final Best Fitness: 77.6513196495451
+
+[6/7] Running Artificial Bee Colony (Swarm Intelligence)...
+Gen 50: Best Cost = 1.045368e+02
+Gen 100: Best Cost = 8.275944e+01
+
+[7/7] Running Cuckoo Search (Swarm Intelligence)...
+Gen 10/100: Best = 1.853761e+02
+Gen 20/100: Best = 1.654195e+02
+Gen 30/100: Best = 1.605289e+02
+Gen 40/100: Best = 1.386007e+02
+Gen 50/100: Best = 1.300058e+02
+Gen 60/100: Best = 1.236093e+02
+Gen 70/100: Best = 1.118257e+02
+Gen 80/100: Best = 1.089717e+02
+Gen 90/100: Best = 1.046595e+02
+Gen 100/100: Best = 1.033207e+02
+Scalability plot saved to: comparison_rastrigin_scalability.png
+
+
+▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓
+▓ PART 2: DISCRETE OPTIMIZATION (Traveling Salesman Problem)
+▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓
+
+================================================================================
+TSP COMPARISON: 30 Cities
+Running 5 independent trials for robustness analysis
+================================================================================
+
+[1/5] Running Hill Climbing (2-opt)...
+  Trial 1/5... 
+Running Hill Climbing TSP with 10 restarts...
+  Restart 1/10 - Local minimum: 983.88
+  Restart 2/10 - Local minimum: 903.53
+  Restart 3/10 - Local minimum: 1018.61
+  Restart 4/10 - Local minimum: 998.36
+  Restart 5/10 - Local minimum: 955.07
+  Restart 6/10 - Local minimum: 917.14
+  Restart 7/10 - Local minimum: 983.32
+  Restart 8/10 - Local minimum: 919.79
+  Restart 9/10 - Local minimum: 917.07
+  Restart 10/10 - Local minimum: 933.40
+Hill Climbing completed. Best cost: 903.53
+Cost: 903.53
+  Trial 2/5... 
+Running Hill Climbing TSP with 10 restarts...
+  Restart 1/10 - Local minimum: 947.21
+  Restart 2/10 - Local minimum: 917.07
+  Restart 3/10 - Local minimum: 903.53
+  Restart 4/10 - Local minimum: 903.53
+  Restart 5/10 - Local minimum: 997.48
+  Restart 6/10 - Local minimum: 985.69
+  Restart 7/10 - Local minimum: 917.14
+  Restart 8/10 - Local minimum: 917.07
+  Restart 9/10 - Local minimum: 1023.28
+  Restart 10/10 - Local minimum: 989.90
+Hill Climbing completed. Best cost: 903.53
+Cost: 903.53
+  Trial 3/5... 
+Running Hill Climbing TSP with 10 restarts...
+  Restart 1/10 - Local minimum: 962.81
+  Restart 2/10 - Local minimum: 917.14
+  Restart 3/10 - Local minimum: 921.34
+  Restart 4/10 - Local minimum: 917.07
+  Restart 5/10 - Local minimum: 919.79
+  Restart 6/10 - Local minimum: 903.53
+  Restart 7/10 - Local minimum: 954.00
+  Restart 8/10 - Local minimum: 933.32
+  Restart 9/10 - Local minimum: 919.79
+  Restart 10/10 - Local minimum: 935.78
+Hill Climbing completed. Best cost: 903.53
+Cost: 903.53
+  Trial 4/5... 
+Running Hill Climbing TSP with 10 restarts...
+  Restart 1/10 - Local minimum: 933.32
+  Restart 2/10 - Local minimum: 1016.36
+  Restart 3/10 - Local minimum: 917.14
+  Restart 4/10 - Local minimum: 919.79
+  Restart 5/10 - Local minimum: 919.79
+  Restart 6/10 - Local minimum: 947.62
+  Restart 7/10 - Local minimum: 933.40
+  Restart 8/10 - Local minimum: 1022.59
+  Restart 9/10 - Local minimum: 949.39
+  Restart 10/10 - Local minimum: 907.80
+Hill Climbing completed. Best cost: 907.80
+Cost: 907.80
+  Trial 5/5... 
+Running Hill Climbing TSP with 10 restarts...
+  Restart 1/10 - Local minimum: 949.31
+  Restart 2/10 - Local minimum: 960.82
+  Restart 3/10 - Local minimum: 903.53
+  Restart 4/10 - Local minimum: 917.07
+  Restart 5/10 - Local minimum: 969.78
+  Restart 6/10 - Local minimum: 1035.92
+  Restart 7/10 - Local minimum: 919.79
+  Restart 8/10 - Local minimum: 966.67
+  Restart 9/10 - Local minimum: 933.32
+  Restart 10/10 - Local minimum: 986.81
+Hill Climbing completed. Best cost: 903.53
+Cost: 903.53
+
+[2/5] A* Search skipped (n_cities=30 > 12)
+     A* is only practical for small TSP instances
+
+[3/5] Running Genetic Algorithm...
+  Trial 1/5... 
+Running Genetic Algorithm for TSP...
+  Population: 100, Generations: 200
+  Generation 50/200 - Best cost: 1198.85
+  Generation 100/200 - Best cost: 1057.91
+  Generation 150/200 - Best cost: 1029.22
+  Generation 200/200 - Best cost: 1029.22
+Genetic Algorithm completed. Best cost: 1029.22
+Cost: 1029.22
+  Trial 2/5... 
+Running Genetic Algorithm for TSP...
+  Population: 100, Generations: 200
+  Generation 50/200 - Best cost: 1118.15
+  Generation 100/200 - Best cost: 921.12
+  Generation 150/200 - Best cost: 917.07
+  Generation 200/200 - Best cost: 917.07
+Genetic Algorithm completed. Best cost: 917.07
+Cost: 917.07
+  Trial 3/5... 
+Running Genetic Algorithm for TSP...
+  Population: 100, Generations: 200
+  Generation 50/200 - Best cost: 963.91
+  Generation 100/200 - Best cost: 933.40
+  Generation 150/200 - Best cost: 933.40
+  Generation 200/200 - Best cost: 933.40
+Genetic Algorithm completed. Best cost: 933.40
+Cost: 933.40
+  Trial 4/5... 
+Running Genetic Algorithm for TSP...
+  Population: 100, Generations: 200
+  Generation 50/200 - Best cost: 1047.32
+  Generation 100/200 - Best cost: 903.57
+  Generation 150/200 - Best cost: 903.53
+  Generation 200/200 - Best cost: 903.53
+Genetic Algorithm completed. Best cost: 903.53
+Cost: 903.53
+  Trial 5/5... 
+Running Genetic Algorithm for TSP...
+  Population: 100, Generations: 200
+  Generation 50/200 - Best cost: 1055.55
+  Generation 100/200 - Best cost: 989.84
+  Generation 150/200 - Best cost: 985.06
+  Generation 200/200 - Best cost: 950.56
+Genetic Algorithm completed. Best cost: 950.56
+Cost: 950.56
+
+[4/5] Running ACO (Swarm Intelligence)...
+  Trial 1/5... Iteration 1/100 - Best length: 1287.39
+Iteration 2/100 - Best length: 1178.45
+Iteration 3/100 - Best length: 983.41
+Iteration 4/100 - Best length: 983.41
+Iteration 5/100 - Best length: 983.41
+Iteration 6/100 - Best length: 983.41
+Iteration 7/100 - Best length: 983.41
+Iteration 8/100 - Best length: 983.41
+Iteration 9/100 - Best length: 983.41
+Iteration 10/100 - Best length: 983.41
+Iteration 11/100 - Best length: 983.41
+Iteration 12/100 - Best length: 983.41
+Iteration 13/100 - Best length: 983.41
+Iteration 14/100 - Best length: 983.41
+Iteration 15/100 - Best length: 983.41
+Iteration 16/100 - Best length: 983.41
+Iteration 17/100 - Best length: 983.41
+Iteration 18/100 - Best length: 983.41
+Iteration 19/100 - Best length: 983.41
+Iteration 20/100 - Best length: 983.41
+Iteration 21/100 - Best length: 981.26
+Iteration 22/100 - Best length: 981.26
+Iteration 23/100 - Best length: 981.26
+Iteration 24/100 - Best length: 981.26
+Iteration 25/100 - Best length: 973.61
+Iteration 26/100 - Best length: 933.93
+Iteration 27/100 - Best length: 933.93
+Iteration 28/100 - Best length: 933.93
+Iteration 29/100 - Best length: 933.93
+Iteration 30/100 - Best length: 933.93
+Iteration 31/100 - Best length: 933.93
+Iteration 32/100 - Best length: 933.93
+Iteration 33/100 - Best length: 933.93
+Iteration 34/100 - Best length: 933.93
+Iteration 35/100 - Best length: 933.93
+Iteration 36/100 - Best length: 933.93
+Iteration 37/100 - Best length: 933.93
+Iteration 38/100 - Best length: 933.93
+Iteration 39/100 - Best length: 933.93
+Iteration 40/100 - Best length: 933.93
+Iteration 41/100 - Best length: 933.93
+Iteration 42/100 - Best length: 933.93
+Iteration 43/100 - Best length: 933.93
+Iteration 44/100 - Best length: 933.93
+Iteration 45/100 - Best length: 933.93
+Iteration 46/100 - Best length: 933.93
+Iteration 47/100 - Best length: 933.93
+Iteration 48/100 - Best length: 933.93
+Iteration 49/100 - Best length: 933.93
+Iteration 50/100 - Best length: 933.93
+Iteration 51/100 - Best length: 933.93
+Iteration 52/100 - Best length: 933.93
+Iteration 53/100 - Best length: 933.93
+Iteration 54/100 - Best length: 933.93
+Iteration 55/100 - Best length: 933.93
+Iteration 56/100 - Best length: 933.93
+Iteration 57/100 - Best length: 933.93
+Iteration 58/100 - Best length: 933.93
+Iteration 59/100 - Best length: 933.93
+Iteration 60/100 - Best length: 933.93
+Iteration 61/100 - Best length: 933.93
+Iteration 62/100 - Best length: 933.93
+Iteration 63/100 - Best length: 933.93
+Iteration 64/100 - Best length: 933.93
+Iteration 65/100 - Best length: 933.93
+Iteration 66/100 - Best length: 933.93
+Iteration 67/100 - Best length: 933.93
+Iteration 68/100 - Best length: 933.93
+Iteration 69/100 - Best length: 933.93
+Iteration 70/100 - Best length: 933.93
+Iteration 71/100 - Best length: 933.93
+Iteration 72/100 - Best length: 933.93
+Iteration 73/100 - Best length: 933.93
+Iteration 74/100 - Best length: 933.93
+Iteration 75/100 - Best length: 933.93
+Iteration 76/100 - Best length: 933.93
+Iteration 77/100 - Best length: 910.11
+Iteration 78/100 - Best length: 910.11
+Iteration 79/100 - Best length: 910.11
+Iteration 80/100 - Best length: 910.11
+Iteration 81/100 - Best length: 910.11
+Iteration 82/100 - Best length: 910.11
+Iteration 83/100 - Best length: 910.11
+Iteration 84/100 - Best length: 910.11
+Iteration 85/100 - Best length: 910.11
+Iteration 86/100 - Best length: 910.11
+Iteration 87/100 - Best length: 910.11
+Iteration 88/100 - Best length: 910.11
+Iteration 89/100 - Best length: 910.11
+Iteration 90/100 - Best length: 910.11
+Iteration 91/100 - Best length: 910.11
+Iteration 92/100 - Best length: 910.11
+Iteration 93/100 - Best length: 910.11
+Iteration 94/100 - Best length: 910.11
+Iteration 95/100 - Best length: 910.11
+Iteration 96/100 - Best length: 910.11
+Iteration 97/100 - Best length: 910.11
+Iteration 98/100 - Best length: 910.11
+Iteration 99/100 - Best length: 910.11
+Iteration 100/100 - Best length: 910.11
+Cost: 910.11
+  Trial 2/5... Iteration 1/100 - Best length: 1529.29
+Iteration 2/100 - Best length: 995.64
+Iteration 3/100 - Best length: 995.64
+Iteration 4/100 - Best length: 995.64
+Iteration 5/100 - Best length: 990.45
+Iteration 6/100 - Best length: 990.45
+Iteration 7/100 - Best length: 990.45
+Iteration 8/100 - Best length: 966.24
+Iteration 9/100 - Best length: 966.24
+Iteration 10/100 - Best length: 966.24
+Iteration 11/100 - Best length: 966.24
+Iteration 12/100 - Best length: 966.24
+Iteration 13/100 - Best length: 910.11
+Iteration 14/100 - Best length: 910.11
+Iteration 15/100 - Best length: 910.11
+Iteration 16/100 - Best length: 910.11
+Iteration 17/100 - Best length: 910.11
+Iteration 18/100 - Best length: 910.11
+Iteration 19/100 - Best length: 910.11
+Iteration 20/100 - Best length: 910.11
+Iteration 21/100 - Best length: 910.11
+Iteration 22/100 - Best length: 910.11
+Iteration 23/100 - Best length: 910.11
+Iteration 24/100 - Best length: 910.11
+Iteration 25/100 - Best length: 910.11
+Iteration 26/100 - Best length: 910.11
+Iteration 27/100 - Best length: 910.11
+Iteration 28/100 - Best length: 910.11
+Iteration 29/100 - Best length: 910.11
+Iteration 30/100 - Best length: 910.11
+Iteration 31/100 - Best length: 910.11
+Iteration 32/100 - Best length: 910.11
+Iteration 33/100 - Best length: 910.11
+Iteration 34/100 - Best length: 910.11
+Iteration 35/100 - Best length: 910.11
+Iteration 36/100 - Best length: 910.11
+Iteration 37/100 - Best length: 910.11
+Iteration 38/100 - Best length: 910.11
+Iteration 39/100 - Best length: 910.11
+Iteration 40/100 - Best length: 910.11
+Iteration 41/100 - Best length: 910.11
+Iteration 42/100 - Best length: 910.11
+Iteration 43/100 - Best length: 910.11
+Iteration 44/100 - Best length: 910.11
+Iteration 45/100 - Best length: 910.11
+Iteration 46/100 - Best length: 910.11
+Iteration 47/100 - Best length: 910.11
+Iteration 48/100 - Best length: 910.11
+Iteration 49/100 - Best length: 910.11
+Iteration 50/100 - Best length: 910.11
+Iteration 51/100 - Best length: 910.11
+Iteration 52/100 - Best length: 910.11
+Iteration 53/100 - Best length: 910.11
+Iteration 54/100 - Best length: 910.11
+Iteration 55/100 - Best length: 910.11
+Iteration 56/100 - Best length: 910.11
+Iteration 57/100 - Best length: 910.11
+Iteration 58/100 - Best length: 910.11
+Iteration 59/100 - Best length: 910.11
+Iteration 60/100 - Best length: 910.11
+Iteration 61/100 - Best length: 910.11
+Iteration 62/100 - Best length: 910.11
+Iteration 63/100 - Best length: 910.11
+Iteration 64/100 - Best length: 910.11
+Iteration 65/100 - Best length: 910.11
+Iteration 66/100 - Best length: 910.11
+Iteration 67/100 - Best length: 910.11
+Iteration 68/100 - Best length: 910.11
+Iteration 69/100 - Best length: 910.11
+Iteration 70/100 - Best length: 910.11
+Iteration 71/100 - Best length: 910.11
+Iteration 72/100 - Best length: 910.11
+Iteration 73/100 - Best length: 910.11
+Iteration 74/100 - Best length: 910.11
+Iteration 75/100 - Best length: 910.11
+Iteration 76/100 - Best length: 910.11
+Iteration 77/100 - Best length: 910.11
+Iteration 78/100 - Best length: 910.11
+Iteration 79/100 - Best length: 910.11
+Iteration 80/100 - Best length: 910.11
+Iteration 81/100 - Best length: 910.11
+Iteration 82/100 - Best length: 910.11
+Iteration 83/100 - Best length: 910.11
+Iteration 84/100 - Best length: 910.11
+Iteration 85/100 - Best length: 910.11
+Iteration 86/100 - Best length: 910.11
+Iteration 87/100 - Best length: 910.11
+Iteration 88/100 - Best length: 910.11
+Iteration 89/100 - Best length: 910.11
+Iteration 90/100 - Best length: 910.11
+Iteration 91/100 - Best length: 910.11
+Iteration 92/100 - Best length: 910.11
+Iteration 93/100 - Best length: 910.11
+Iteration 94/100 - Best length: 910.11
+Iteration 95/100 - Best length: 910.11
+Iteration 96/100 - Best length: 910.11
+Iteration 97/100 - Best length: 910.11
+Iteration 98/100 - Best length: 910.11
+Iteration 99/100 - Best length: 910.11
+Iteration 100/100 - Best length: 910.11
+Cost: 910.11
+  Trial 3/5... Iteration 1/100 - Best length: 1436.42
+Iteration 2/100 - Best length: 1223.29
+Iteration 3/100 - Best length: 1079.41
+Iteration 4/100 - Best length: 1079.41
+Iteration 5/100 - Best length: 1058.66
+Iteration 6/100 - Best length: 1058.66
+Iteration 7/100 - Best length: 1032.55
+Iteration 8/100 - Best length: 1032.55
+Iteration 9/100 - Best length: 1032.55
+Iteration 10/100 - Best length: 1032.55
+Iteration 11/100 - Best length: 1032.55
+Iteration 12/100 - Best length: 1032.55
+Iteration 13/100 - Best length: 995.96
+Iteration 14/100 - Best length: 994.50
+Iteration 15/100 - Best length: 994.50
+Iteration 16/100 - Best length: 988.01
+Iteration 17/100 - Best length: 988.01
+Iteration 18/100 - Best length: 984.34
+Iteration 19/100 - Best length: 984.34
+Iteration 20/100 - Best length: 984.34
+Iteration 21/100 - Best length: 984.34
+Iteration 22/100 - Best length: 975.94
+Iteration 23/100 - Best length: 975.94
+Iteration 24/100 - Best length: 937.50
+Iteration 25/100 - Best length: 937.50
+Iteration 26/100 - Best length: 937.50
+Iteration 27/100 - Best length: 937.50
+Iteration 28/100 - Best length: 937.50
+Iteration 29/100 - Best length: 937.50
+Iteration 30/100 - Best length: 937.50
+Iteration 31/100 - Best length: 937.50
+Iteration 32/100 - Best length: 937.50
+Iteration 33/100 - Best length: 937.50
+Iteration 34/100 - Best length: 927.99
+Iteration 35/100 - Best length: 927.99
+Iteration 36/100 - Best length: 927.99
+Iteration 37/100 - Best length: 927.99
+Iteration 38/100 - Best length: 927.99
+Iteration 39/100 - Best length: 927.99
+Iteration 40/100 - Best length: 927.99
+Iteration 41/100 - Best length: 927.99
+Iteration 42/100 - Best length: 927.99
+Iteration 43/100 - Best length: 927.99
+Iteration 44/100 - Best length: 927.99
+Iteration 45/100 - Best length: 927.99
+Iteration 46/100 - Best length: 927.99
+Iteration 47/100 - Best length: 927.99
+Iteration 48/100 - Best length: 927.99
+Iteration 49/100 - Best length: 927.99
+Iteration 50/100 - Best length: 927.99
+Iteration 51/100 - Best length: 927.99
+Iteration 52/100 - Best length: 927.99
+Iteration 53/100 - Best length: 927.99
+Iteration 54/100 - Best length: 927.99
+Iteration 55/100 - Best length: 927.99
+Iteration 56/100 - Best length: 927.99
+Iteration 57/100 - Best length: 927.99
+Iteration 58/100 - Best length: 927.99
+Iteration 59/100 - Best length: 914.38
+Iteration 60/100 - Best length: 914.38
+Iteration 61/100 - Best length: 914.38
+Iteration 62/100 - Best length: 914.38
+Iteration 63/100 - Best length: 914.38
+Iteration 64/100 - Best length: 914.38
+Iteration 65/100 - Best length: 914.38
+Iteration 66/100 - Best length: 914.38
+Iteration 67/100 - Best length: 914.38
+Iteration 68/100 - Best length: 914.38
+Iteration 69/100 - Best length: 914.38
+Iteration 70/100 - Best length: 914.38
+Iteration 71/100 - Best length: 914.38
+Iteration 72/100 - Best length: 914.38
+Iteration 73/100 - Best length: 914.38
+Iteration 74/100 - Best length: 914.38
+Iteration 75/100 - Best length: 914.38
+Iteration 76/100 - Best length: 914.38
+Iteration 77/100 - Best length: 914.38
+Iteration 78/100 - Best length: 914.38
+Iteration 79/100 - Best length: 914.38
+Iteration 80/100 - Best length: 914.38
+Iteration 81/100 - Best length: 914.38
+Iteration 82/100 - Best length: 914.38
+Iteration 83/100 - Best length: 914.38
+Iteration 84/100 - Best length: 914.38
+Iteration 85/100 - Best length: 914.38
+Iteration 86/100 - Best length: 914.38
+Iteration 87/100 - Best length: 914.38
+Iteration 88/100 - Best length: 914.38
+Iteration 89/100 - Best length: 914.38
+Iteration 90/100 - Best length: 914.38
+Iteration 91/100 - Best length: 914.38
+Iteration 92/100 - Best length: 914.38
+Iteration 93/100 - Best length: 914.38
+Iteration 94/100 - Best length: 914.38
+Iteration 95/100 - Best length: 914.38
+Iteration 96/100 - Best length: 914.38
+Iteration 97/100 - Best length: 914.38
+Iteration 98/100 - Best length: 914.38
+Iteration 99/100 - Best length: 914.38
+Iteration 100/100 - Best length: 914.38
+Cost: 914.38
+  Trial 4/5... Iteration 1/100 - Best length: 1330.96
+Iteration 2/100 - Best length: 1138.59
+Iteration 3/100 - Best length: 1081.38
+Iteration 4/100 - Best length: 1081.38
+Iteration 5/100 - Best length: 1020.27
+Iteration 6/100 - Best length: 1020.27
+Iteration 7/100 - Best length: 1020.27
+Iteration 8/100 - Best length: 1020.27
+Iteration 9/100 - Best length: 968.61
+Iteration 10/100 - Best length: 968.61
+Iteration 11/100 - Best length: 968.61
+Iteration 12/100 - Best length: 968.61
+Iteration 13/100 - Best length: 924.26
+Iteration 14/100 - Best length: 924.26
+Iteration 15/100 - Best length: 924.26
+Iteration 16/100 - Best length: 924.26
+Iteration 17/100 - Best length: 924.26
+Iteration 18/100 - Best length: 924.26
+Iteration 19/100 - Best length: 924.26
+Iteration 20/100 - Best length: 924.26
+Iteration 21/100 - Best length: 924.26
+Iteration 22/100 - Best length: 924.26
+Iteration 23/100 - Best length: 924.26
+Iteration 24/100 - Best length: 924.26
+Iteration 25/100 - Best length: 924.26
+Iteration 26/100 - Best length: 924.26
+Iteration 27/100 - Best length: 924.26
+Iteration 28/100 - Best length: 924.26
+Iteration 29/100 - Best length: 924.26
+Iteration 30/100 - Best length: 924.26
+Iteration 31/100 - Best length: 924.26
+Iteration 32/100 - Best length: 924.26
+Iteration 33/100 - Best length: 924.26
+Iteration 34/100 - Best length: 924.26
+Iteration 35/100 - Best length: 924.26
+Iteration 36/100 - Best length: 924.26
+Iteration 37/100 - Best length: 924.26
+Iteration 38/100 - Best length: 924.26
+Iteration 39/100 - Best length: 924.26
+Iteration 40/100 - Best length: 924.26
+Iteration 41/100 - Best length: 924.26
+Iteration 42/100 - Best length: 924.26
+Iteration 43/100 - Best length: 924.26
+Iteration 44/100 - Best length: 924.26
+Iteration 45/100 - Best length: 924.26
+Iteration 46/100 - Best length: 924.26
+Iteration 47/100 - Best length: 924.26
+Iteration 48/100 - Best length: 924.26
+Iteration 49/100 - Best length: 924.26
+Iteration 50/100 - Best length: 924.26
+Iteration 51/100 - Best length: 924.26
+Iteration 52/100 - Best length: 924.26
+Iteration 53/100 - Best length: 924.26
+Iteration 54/100 - Best length: 924.26
+Iteration 55/100 - Best length: 924.26
+Iteration 56/100 - Best length: 924.26
+Iteration 57/100 - Best length: 924.26
+Iteration 58/100 - Best length: 924.26
+Iteration 59/100 - Best length: 924.26
+Iteration 60/100 - Best length: 924.26
+Iteration 61/100 - Best length: 924.26
+Iteration 62/100 - Best length: 924.26
+Iteration 63/100 - Best length: 924.26
+Iteration 64/100 - Best length: 924.26
+Iteration 65/100 - Best length: 924.26
+Iteration 66/100 - Best length: 924.26
+Iteration 67/100 - Best length: 924.26
+Iteration 68/100 - Best length: 924.26
+Iteration 69/100 - Best length: 924.26
+Iteration 70/100 - Best length: 924.26
+Iteration 71/100 - Best length: 924.26
+Iteration 72/100 - Best length: 924.26
+Iteration 73/100 - Best length: 924.26
+Iteration 74/100 - Best length: 924.26
+Iteration 75/100 - Best length: 924.26
+Iteration 76/100 - Best length: 924.26
+Iteration 77/100 - Best length: 924.26
+Iteration 78/100 - Best length: 924.26
+Iteration 79/100 - Best length: 924.26
+Iteration 80/100 - Best length: 924.26
+Iteration 81/100 - Best length: 924.26
+Iteration 82/100 - Best length: 924.26
+Iteration 83/100 - Best length: 910.11
+Iteration 84/100 - Best length: 910.11
+Iteration 85/100 - Best length: 910.11
+Iteration 86/100 - Best length: 910.11
+Iteration 87/100 - Best length: 910.11
+Iteration 88/100 - Best length: 910.11
+Iteration 89/100 - Best length: 910.11
+Iteration 90/100 - Best length: 910.11
+Iteration 91/100 - Best length: 910.11
+Iteration 92/100 - Best length: 910.11
+Iteration 93/100 - Best length: 910.11
+Iteration 94/100 - Best length: 910.11
+Iteration 95/100 - Best length: 910.11
+Iteration 96/100 - Best length: 910.11
+Iteration 97/100 - Best length: 910.11
+Iteration 98/100 - Best length: 910.11
+Iteration 99/100 - Best length: 910.11
+Iteration 100/100 - Best length: 910.11
+Cost: 910.11
+  Trial 5/5... Iteration 1/100 - Best length: 1264.34
+Iteration 2/100 - Best length: 1080.88
+Iteration 3/100 - Best length: 1080.88
+Iteration 4/100 - Best length: 1048.54
+Iteration 5/100 - Best length: 971.25
+Iteration 6/100 - Best length: 971.25
+Iteration 7/100 - Best length: 971.25
+Iteration 8/100 - Best length: 971.25
+Iteration 9/100 - Best length: 971.25
+Iteration 10/100 - Best length: 971.25
+Iteration 11/100 - Best length: 971.25
+Iteration 12/100 - Best length: 971.25
+Iteration 13/100 - Best length: 971.25
+Iteration 14/100 - Best length: 971.25
+Iteration 15/100 - Best length: 971.25
+Iteration 16/100 - Best length: 971.25
+Iteration 17/100 - Best length: 971.25
+Iteration 18/100 - Best length: 971.25
+Iteration 19/100 - Best length: 971.25
+Iteration 20/100 - Best length: 971.25
+Iteration 21/100 - Best length: 971.25
+Iteration 22/100 - Best length: 971.25
+Iteration 23/100 - Best length: 971.25
+Iteration 24/100 - Best length: 971.25
+Iteration 25/100 - Best length: 971.25
+Iteration 26/100 - Best length: 971.25
+Iteration 27/100 - Best length: 971.25
+Iteration 28/100 - Best length: 971.25
+Iteration 29/100 - Best length: 971.25
+Iteration 30/100 - Best length: 971.25
+Iteration 31/100 - Best length: 971.25
+Iteration 32/100 - Best length: 970.25
+Iteration 33/100 - Best length: 963.67
+Iteration 34/100 - Best length: 963.67
+Iteration 35/100 - Best length: 963.67
+Iteration 36/100 - Best length: 963.67
+Iteration 37/100 - Best length: 963.67
+Iteration 38/100 - Best length: 963.67
+Iteration 39/100 - Best length: 963.67
+Iteration 40/100 - Best length: 963.67
+Iteration 41/100 - Best length: 963.67
+Iteration 42/100 - Best length: 963.67
+Iteration 43/100 - Best length: 963.67
+Iteration 44/100 - Best length: 963.67
+Iteration 45/100 - Best length: 963.67
+Iteration 46/100 - Best length: 963.67
+Iteration 47/100 - Best length: 963.67
+Iteration 48/100 - Best length: 963.67
+Iteration 49/100 - Best length: 963.67
+Iteration 50/100 - Best length: 963.67
+Iteration 51/100 - Best length: 963.67
+Iteration 52/100 - Best length: 963.67
+Iteration 53/100 - Best length: 963.67
+Iteration 54/100 - Best length: 963.67
+Iteration 55/100 - Best length: 963.67
+Iteration 56/100 - Best length: 963.67
+Iteration 57/100 - Best length: 927.51
+Iteration 58/100 - Best length: 927.51
+Iteration 59/100 - Best length: 927.51
+Iteration 60/100 - Best length: 927.51
+Iteration 61/100 - Best length: 927.51
+Iteration 62/100 - Best length: 927.51
+Iteration 63/100 - Best length: 927.51
+Iteration 64/100 - Best length: 927.51
+Iteration 65/100 - Best length: 927.51
+Iteration 66/100 - Best length: 927.51
+Iteration 67/100 - Best length: 927.51
+Iteration 68/100 - Best length: 927.51
+Iteration 69/100 - Best length: 927.51
+Iteration 70/100 - Best length: 927.51
+Iteration 71/100 - Best length: 927.51
+Iteration 72/100 - Best length: 927.51
+Iteration 73/100 - Best length: 927.51
+Iteration 74/100 - Best length: 927.51
+Iteration 75/100 - Best length: 927.51
+Iteration 76/100 - Best length: 927.51
+Iteration 77/100 - Best length: 914.38
+Iteration 78/100 - Best length: 910.11
+Iteration 79/100 - Best length: 910.11
+Iteration 80/100 - Best length: 910.11
+Iteration 81/100 - Best length: 910.11
+Iteration 82/100 - Best length: 910.11
+Iteration 83/100 - Best length: 910.11
+Iteration 84/100 - Best length: 910.11
+Iteration 85/100 - Best length: 910.11
+Iteration 86/100 - Best length: 910.11
+Iteration 87/100 - Best length: 910.11
+Iteration 88/100 - Best length: 910.11
+Iteration 89/100 - Best length: 910.11
+Iteration 90/100 - Best length: 910.11
+Iteration 91/100 - Best length: 910.11
+Iteration 92/100 - Best length: 910.11
+Iteration 93/100 - Best length: 910.11
+Iteration 94/100 - Best length: 910.11
+Iteration 95/100 - Best length: 910.11
+Iteration 96/100 - Best length: 910.11
+Iteration 97/100 - Best length: 910.11
+Iteration 98/100 - Best length: 910.11
+Iteration 99/100 - Best length: 910.11
+Iteration 100/100 - Best length: 910.11
+Cost: 910.11
+
+[5/6] Running Hybrid PSO (Swarm Intelligence)...
+  Trial 1/5... Initial best cost (after 2-Opt): 903.53
+Iteration 10/50, Best Cost: 903.53
+Iteration 20/50, Best Cost: 903.53
+Iteration 30/50, Best Cost: 903.53
+Iteration 40/50, Best Cost: 903.53
+Iteration 50/50, Best Cost: 903.53
+Optimization finished. Final best cost: 903.53
+Cost: 903.53
+  Trial 2/5... Initial best cost (after 2-Opt): 907.80
+Iteration 10/50, Best Cost: 903.53
+Iteration 20/50, Best Cost: 903.53
+Iteration 30/50, Best Cost: 903.53
+Iteration 40/50, Best Cost: 903.53
+Iteration 50/50, Best Cost: 903.53
+Optimization finished. Final best cost: 903.53
+Cost: 903.53
+  Trial 3/5... Initial best cost (after 2-Opt): 903.53
+Iteration 10/50, Best Cost: 903.53
+Iteration 20/50, Best Cost: 903.53
+Iteration 30/50, Best Cost: 903.53
+Iteration 40/50, Best Cost: 903.53
+Iteration 50/50, Best Cost: 903.53
+Optimization finished. Final best cost: 903.53
+Cost: 903.53
+  Trial 4/5... Initial best cost (after 2-Opt): 903.53
+Iteration 10/50, Best Cost: 903.53
+Iteration 20/50, Best Cost: 903.53
+Iteration 30/50, Best Cost: 903.53
+Iteration 40/50, Best Cost: 903.53
+Iteration 50/50, Best Cost: 903.53
+Optimization finished. Final best cost: 903.53
+Cost: 903.53
+  Trial 5/5... Initial best cost (after 2-Opt): 903.53
+Iteration 10/50, Best Cost: 903.53
+Iteration 20/50, Best Cost: 903.53
+Iteration 30/50, Best Cost: 903.53
+Iteration 40/50, Best Cost: 903.53
+Iteration 50/50, Best Cost: 903.53
+Optimization finished. Final best cost: 903.53
+Cost: 903.53
+
+[6/6] Running Discrete Firefly Algorithm (Swarm Intelligence)...
+  Trial 1/5... Iteration 0: Best Distance = 903.53
+Iteration 10: Best Distance = 903.53
+Iteration 20: Best Distance = 903.53
+Iteration 30: Best Distance = 903.53
+Iteration 40: Best Distance = 903.53
+Iteration 50: Best Distance = 903.53
+Iteration 60: Best Distance = 903.53
+Iteration 70: Best Distance = 903.53
+Iteration 80: Best Distance = 903.53
+Iteration 90: Best Distance = 903.53
+Cost: 903.53
+  Trial 2/5... Iteration 0: Best Distance = 903.53
+Iteration 10: Best Distance = 903.53
+Iteration 20: Best Distance = 903.53
+Iteration 30: Best Distance = 903.53
+Iteration 40: Best Distance = 903.53
+Iteration 50: Best Distance = 903.53
+Iteration 60: Best Distance = 903.53
+Iteration 70: Best Distance = 903.53
+Iteration 80: Best Distance = 903.53
+Iteration 90: Best Distance = 903.53
+Cost: 903.53
+  Trial 3/5... Iteration 0: Best Distance = 903.53
+Iteration 10: Best Distance = 903.53
+Iteration 20: Best Distance = 903.53
+Iteration 30: Best Distance = 903.53
+Iteration 40: Best Distance = 903.53
+Iteration 50: Best Distance = 903.53
+Iteration 60: Best Distance = 903.53
+Iteration 70: Best Distance = 903.53
+Iteration 80: Best Distance = 903.53
+Iteration 90: Best Distance = 903.53
+Cost: 903.53
+  Trial 4/5... Iteration 0: Best Distance = 903.53
+Iteration 10: Best Distance = 903.53
+Iteration 20: Best Distance = 903.53
+Iteration 30: Best Distance = 903.53
+Iteration 40: Best Distance = 903.53
+Iteration 50: Best Distance = 903.53
+Iteration 60: Best Distance = 903.53
+Iteration 70: Best Distance = 903.53
+Iteration 80: Best Distance = 903.53
+Iteration 90: Best Distance = 903.53
+Cost: 903.53
+  Trial 5/5... Iteration 0: Best Distance = 903.53
+Iteration 10: Best Distance = 903.53
+Iteration 20: Best Distance = 903.53
+Iteration 30: Best Distance = 903.53
+Iteration 40: Best Distance = 903.53
+Iteration 50: Best Distance = 903.53
+Iteration 60: Best Distance = 903.53
+Iteration 70: Best Distance = 903.53
+Iteration 80: Best Distance = 903.53
+Iteration 90: Best Distance = 903.53
+Cost: 903.53
+
+[7/8] Running Artificial Bee Colony for TSP (Swarm Intelligence)...
+  Trial 1/5... Initial Best Distance: 2738.60
+Gen 100: Best Distance = 937.08
+Cost: 937.08
+  Trial 2/5... Initial Best Distance: 2678.21
+Gen 100: Best Distance = 960.41
+Cost: 960.41
+  Trial 3/5... Initial Best Distance: 2775.93
+Gen 100: Best Distance = 921.41
+Cost: 921.41
+  Trial 4/5... Initial Best Distance: 2698.99
+Gen 100: Best Distance = 933.32
+Cost: 933.32
+  Trial 5/5... Initial Best Distance: 2921.42
+Gen 100: Best Distance = 933.40
+Cost: 933.40
+
+[8/8] Running Cuckoo Search for TSP (Swarm Intelligence)...
+  Trial 1/5... Initial Best Distance: 2707.67
+Gen 100: Best Distance = 907.80
+Cost: 907.80
+  Trial 2/5... Initial Best Distance: 2707.67
+Gen 100: Best Distance = 907.80
+Cost: 907.80
+  Trial 3/5... Initial Best Distance: 2707.67
+Gen 100: Best Distance = 907.80
+Cost: 907.80
+  Trial 4/5... Initial Best Distance: 2707.67
+Gen 100: Best Distance = 907.80
+Cost: 907.80
+  Trial 5/5... Initial Best Distance: 2707.67
+Gen 100: Best Distance = 907.80
+Cost: 907.80
+
+================================================================================
+TSP (30 Cities) - RESULTS SUMMARY
+================================================================================
+Algorithm                 Best Cost       Time (s)     Notes
+--------------------------------------------------------------------------------
+Hill Climbing             903.534002      0.912        restarts=10
+Genetic Algorithm         903.534002      2.245        population=100, generations=200
+ACO (Swarm)               910.113199      1.347        ants=20, iterations=100
+Hybrid PSO (Swarm)        903.534002      21.220       particles=20, iterations=100
+Firefly (Swarm)           903.534002      20.766       fireflies=30, iterations=100
+ABC (Swarm)               921.413231      1.320        population=40, iterations=100, limit=20
+CS (Swarm)                907.804604      2.159        nests=40, iterations=100, discovery_rate=0.25
+--------------------------------------------------------------------------------
+Best Algorithm: Hybrid PSO (Swarm) (Cost: 903.534002)
+================================================================================
+
+========================================================================================================================
+TSP (30 Cities) - COMPREHENSIVE METRICS ANALYSIS
+========================================================================================================================
+Algorithm            Best Cost    Time(s)    Conv.Speed   Robustness      Memory(MB)  
+------------------------------------------------------------------------------------------------------------------------
+Hill Climbing        903.534002   0.912      1            CV=0.0019       N/A         
+Genetic Algorithm    903.534002   2.245      57           CV=0.0466       N/A         
+ACO (Swarm)          910.113199   1.347      3            CV=0.0019       N/A         
+Hybrid PSO (Swarm)   903.534002   21.220     1            CV=0.0000       N/A         
+Firefly (Swarm)      903.534002   20.766     1            CV=0.0000       N/A         
+ABC (Swarm)          921.413231   1.320      2            CV=0.0136       N/A         
+CS (Swarm)           907.804604   2.159      2            CV=0.0000       N/A         
+========================================================================================================================
+
+Metric Definitions:
+  - Best Cost: Lowest objective function value achieved
+  - Time(s): Computational time in seconds
+  - Conv.Speed: Iterations needed to reach 90% of final solution quality (lower is faster)
+  - Robustness: Coefficient of Variation (std/mean) across multiple runs (lower is more robust)
+  - Memory(MB): Peak memory usage during execution
+========================================================================================================================
+
+====================================================================================================
+TSP DISCRETE OPTIMIZATION - COMPUTATIONAL COMPLEXITY ANALYSIS
+====================================================================================================
+Algorithm                 Time Complexity                Space Complexity              
+----------------------------------------------------------------------------------------------------
+Hill Climbing             O(n × k × d)                   O(d)                          
+Genetic Algorithm         O(g × p × d)                   O(p × d)                      
+ACO (Swarm)               O(i × a × n²)                  O(a × n)                      
+Hybrid PSO (Swarm)        O(i × p × n²)                  O(p × n)                      
+Firefly (Swarm)           O(i × n² × d)                  O(n × d)                      
+ABC (Swarm)               O(i × n × d)                   O(n × d)                      
+CS (Swarm)                O(i × n × d)                   O(n × d)                      
+====================================================================================================
+
+Notation:
+  n = problem size (dimensions or cities)
+  d = dimensions
+  i = iterations
+  p = population size
+  k = archive/sample size
+  g = generations
+  a = number of ants
+  b = branching factor
+====================================================================================================
+Plot saved to: comparison_tsp_convergence.png
+Plot saved to: comparison_tsp_bars.png
+Convergence speed plot saved to: comparison_tsp_convergence_speed.png
+
+📊 Generating robustness analysis for 7 algorithm(s) with multiple runs...
+Robustness plot saved to: comparison_tsp_robustness.png
+Plot saved to: comparison_tsp_solutions.png
+
+▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓
+▓ SCALABILITY ANALYSIS: Testing Different Number of Cities
+▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓
+
+================================================================================
+SCALABILITY ANALYSIS: TSP - Number of Cities
+================================================================================
+
+Testing problem size: 10
+
+================================================================================
+TSP COMPARISON: 10 Cities
+================================================================================
+
+[1/5] Running Hill Climbing (2-opt)...
+
+Running Hill Climbing TSP with 10 restarts...
+  Restart 1/10 - Local minimum: 580.61
+  Restart 2/10 - Local minimum: 580.61
+  Restart 3/10 - Local minimum: 580.61
+  Restart 4/10 - Local minimum: 580.61
+  Restart 5/10 - Local minimum: 580.61
+  Restart 6/10 - Local minimum: 580.61
+  Restart 7/10 - Local minimum: 580.61
+  Restart 8/10 - Local minimum: 580.61
+  Restart 9/10 - Local minimum: 580.61
+  Restart 10/10 - Local minimum: 580.61
+Hill Climbing completed. Best cost: 580.61
+
+[2/5] Running A* Search...
+
+Running A* Search for TSP (10 cities)...
+  Found solution with cost: 580.61 (nodes explored: 22)
+A* Search completed in 0.21s
+Nodes explored: 9226
+Best cost: 580.61
+
+[3/5] Running Genetic Algorithm...
+
+Running Genetic Algorithm for TSP...
+  Population: 100, Generations: 200
+  Generation 50/200 - Best cost: 580.61
+  Generation 100/200 - Best cost: 580.61
+  Generation 150/200 - Best cost: 580.61
+  Generation 200/200 - Best cost: 580.61
+Genetic Algorithm completed. Best cost: 580.61
+
+[4/5] Running ACO (Swarm Intelligence)...
+Iteration 1/100 - Best length: 654.66
+Iteration 2/100 - Best length: 609.96
+Iteration 3/100 - Best length: 580.64
+Iteration 4/100 - Best length: 580.61
+Iteration 5/100 - Best length: 580.61
+Iteration 6/100 - Best length: 580.61
+Iteration 7/100 - Best length: 580.61
+Iteration 8/100 - Best length: 580.61
+Iteration 9/100 - Best length: 580.61
+Iteration 10/100 - Best length: 580.61
+Iteration 11/100 - Best length: 580.61
+Iteration 12/100 - Best length: 580.61
+Iteration 13/100 - Best length: 580.61
+Iteration 14/100 - Best length: 580.61
+Iteration 15/100 - Best length: 580.61
+Iteration 16/100 - Best length: 580.61
+Iteration 17/100 - Best length: 580.61
+Iteration 18/100 - Best length: 580.61
+Iteration 19/100 - Best length: 580.61
+Iteration 20/100 - Best length: 580.61
+Iteration 21/100 - Best length: 580.61
+Iteration 22/100 - Best length: 580.61
+Iteration 23/100 - Best length: 580.61
+Iteration 24/100 - Best length: 580.61
+Iteration 25/100 - Best length: 580.61
+Iteration 26/100 - Best length: 580.61
+Iteration 27/100 - Best length: 580.61
+Iteration 28/100 - Best length: 580.61
+Iteration 29/100 - Best length: 580.61
+Iteration 30/100 - Best length: 580.61
+Iteration 31/100 - Best length: 580.61
+Iteration 32/100 - Best length: 580.61
+Iteration 33/100 - Best length: 580.61
+Iteration 34/100 - Best length: 580.61
+Iteration 35/100 - Best length: 580.61
+Iteration 36/100 - Best length: 580.61
+Iteration 37/100 - Best length: 580.61
+Iteration 38/100 - Best length: 580.61
+Iteration 39/100 - Best length: 580.61
+Iteration 40/100 - Best length: 580.61
+Iteration 41/100 - Best length: 580.61
+Iteration 42/100 - Best length: 580.61
+Iteration 43/100 - Best length: 580.61
+Iteration 44/100 - Best length: 580.61
+Iteration 45/100 - Best length: 580.61
+Iteration 46/100 - Best length: 580.61
+Iteration 47/100 - Best length: 580.61
+Iteration 48/100 - Best length: 580.61
+Iteration 49/100 - Best length: 580.61
+Iteration 50/100 - Best length: 580.61
+Iteration 51/100 - Best length: 580.61
+Iteration 52/100 - Best length: 580.61
+Iteration 53/100 - Best length: 580.61
+Iteration 54/100 - Best length: 580.61
+Iteration 55/100 - Best length: 580.61
+Iteration 56/100 - Best length: 580.61
+Iteration 57/100 - Best length: 580.61
+Iteration 58/100 - Best length: 580.61
+Iteration 59/100 - Best length: 580.61
+Iteration 60/100 - Best length: 580.61
+Iteration 61/100 - Best length: 580.61
+Iteration 62/100 - Best length: 580.61
+Iteration 63/100 - Best length: 580.61
+Iteration 64/100 - Best length: 580.61
+Iteration 65/100 - Best length: 580.61
+Iteration 66/100 - Best length: 580.61
+Iteration 67/100 - Best length: 580.61
+Iteration 68/100 - Best length: 580.61
+Iteration 69/100 - Best length: 580.61
+Iteration 70/100 - Best length: 580.61
+Iteration 71/100 - Best length: 580.61
+Iteration 72/100 - Best length: 580.61
+Iteration 73/100 - Best length: 580.61
+Iteration 74/100 - Best length: 580.61
+Iteration 75/100 - Best length: 580.61
+Iteration 76/100 - Best length: 580.61
+Iteration 77/100 - Best length: 580.61
+Iteration 78/100 - Best length: 580.61
+Iteration 79/100 - Best length: 580.61
+Iteration 80/100 - Best length: 580.61
+Iteration 81/100 - Best length: 580.61
+Iteration 82/100 - Best length: 580.61
+Iteration 83/100 - Best length: 580.61
+Iteration 84/100 - Best length: 580.61
+Iteration 85/100 - Best length: 580.61
+Iteration 86/100 - Best length: 580.61
+Iteration 87/100 - Best length: 580.61
+Iteration 88/100 - Best length: 580.61
+Iteration 89/100 - Best length: 580.61
+Iteration 90/100 - Best length: 580.61
+Iteration 91/100 - Best length: 580.61
+Iteration 92/100 - Best length: 580.61
+Iteration 93/100 - Best length: 580.61
+Iteration 94/100 - Best length: 580.61
+Iteration 95/100 - Best length: 580.61
+Iteration 96/100 - Best length: 580.61
+Iteration 97/100 - Best length: 580.61
+Iteration 98/100 - Best length: 580.61
+Iteration 99/100 - Best length: 580.61
+Iteration 100/100 - Best length: 580.61
+
+[5/6] Running Hybrid PSO (Swarm Intelligence)...
+Initial best cost (after 2-Opt): 580.61
+Iteration 10/50, Best Cost: 580.61
+Iteration 20/50, Best Cost: 580.61
+Iteration 30/50, Best Cost: 580.61
+Iteration 40/50, Best Cost: 580.61
+Iteration 50/50, Best Cost: 580.61
+Optimization finished. Final best cost: 580.61
+
+[6/6] Running Discrete Firefly Algorithm (Swarm Intelligence)...
+Iteration 0: Best Distance = 580.61
+Iteration 10: Best Distance = 580.61
+Iteration 20: Best Distance = 580.61
+Iteration 30: Best Distance = 580.61
+Iteration 40: Best Distance = 580.61
+Iteration 50: Best Distance = 580.61
+Iteration 60: Best Distance = 580.61
+Iteration 70: Best Distance = 580.61
+Iteration 80: Best Distance = 580.61
+Iteration 90: Best Distance = 580.61
+
+[7/8] Running Artificial Bee Colony for TSP (Swarm Intelligence)...
+Initial Best Distance: 826.01
+Gen 100: Best Distance = 580.61
+
+[8/8] Running Cuckoo Search for TSP (Swarm Intelligence)...
+Initial Best Distance: 839.38
+Gen 100: Best Distance = 580.61
+
+Testing problem size: 20
+
+================================================================================
+TSP COMPARISON: 20 Cities
+================================================================================
+
+[1/5] Running Hill Climbing (2-opt)...
+
+Running Hill Climbing TSP with 10 restarts...
+  Restart 1/10 - Local minimum: 773.25
+  Restart 2/10 - Local minimum: 772.86
+  Restart 3/10 - Local minimum: 772.86
+  Restart 4/10 - Local minimum: 772.86
+  Restart 5/10 - Local minimum: 772.86
+  Restart 6/10 - Local minimum: 772.86
+  Restart 7/10 - Local minimum: 772.86
+  Restart 8/10 - Local minimum: 772.86
+  Restart 9/10 - Local minimum: 772.86
+  Restart 10/10 - Local minimum: 773.25
+Hill Climbing completed. Best cost: 772.86
+
+[2/5] A* Search skipped (n_cities=20 > 12)
+     A* is only practical for small TSP instances
+
+[3/5] Running Genetic Algorithm...
+
+Running Genetic Algorithm for TSP...
+  Population: 100, Generations: 200
+  Generation 50/200 - Best cost: 838.25
+  Generation 100/200 - Best cost: 772.86
+  Generation 150/200 - Best cost: 772.86
+  Generation 200/200 - Best cost: 772.86
+Genetic Algorithm completed. Best cost: 772.86
+
+[4/5] Running ACO (Swarm Intelligence)...
+Iteration 1/100 - Best length: 1117.74
+Iteration 2/100 - Best length: 954.20
+Iteration 3/100 - Best length: 954.11
+Iteration 4/100 - Best length: 807.63
+Iteration 5/100 - Best length: 807.63
+Iteration 6/100 - Best length: 807.63
+Iteration 7/100 - Best length: 807.63
+Iteration 8/100 - Best length: 807.63
+Iteration 9/100 - Best length: 807.63
+Iteration 10/100 - Best length: 807.63
+Iteration 11/100 - Best length: 807.63
+Iteration 12/100 - Best length: 807.63
+Iteration 13/100 - Best length: 807.63
+Iteration 14/100 - Best length: 807.63
+Iteration 15/100 - Best length: 786.51
+Iteration 16/100 - Best length: 786.51
+Iteration 17/100 - Best length: 786.51
+Iteration 18/100 - Best length: 786.51
+Iteration 19/100 - Best length: 786.51
+Iteration 20/100 - Best length: 786.51
+Iteration 21/100 - Best length: 786.51
+Iteration 22/100 - Best length: 786.51
+Iteration 23/100 - Best length: 786.51
+Iteration 24/100 - Best length: 786.51
+Iteration 25/100 - Best length: 786.51
+Iteration 26/100 - Best length: 786.51
+Iteration 27/100 - Best length: 786.51
+Iteration 28/100 - Best length: 786.51
+Iteration 29/100 - Best length: 786.51
+Iteration 30/100 - Best length: 786.51
+Iteration 31/100 - Best length: 786.51
+Iteration 32/100 - Best length: 786.51
+Iteration 33/100 - Best length: 786.51
+Iteration 34/100 - Best length: 786.51
+Iteration 35/100 - Best length: 786.51
+Iteration 36/100 - Best length: 786.51
+Iteration 37/100 - Best length: 786.51
+Iteration 38/100 - Best length: 786.51
+Iteration 39/100 - Best length: 786.51
+Iteration 40/100 - Best length: 776.79
+Iteration 41/100 - Best length: 776.79
+Iteration 42/100 - Best length: 776.79
+Iteration 43/100 - Best length: 776.79
+Iteration 44/100 - Best length: 776.79
+Iteration 45/100 - Best length: 776.79
+Iteration 46/100 - Best length: 776.79
+Iteration 47/100 - Best length: 776.79
+Iteration 48/100 - Best length: 776.79
+Iteration 49/100 - Best length: 776.79
+Iteration 50/100 - Best length: 776.79
+Iteration 51/100 - Best length: 776.79
+Iteration 52/100 - Best length: 776.79
+Iteration 53/100 - Best length: 776.79
+Iteration 54/100 - Best length: 776.79
+Iteration 55/100 - Best length: 776.79
+Iteration 56/100 - Best length: 776.79
+Iteration 57/100 - Best length: 776.79
+Iteration 58/100 - Best length: 776.79
+Iteration 59/100 - Best length: 776.79
+Iteration 60/100 - Best length: 776.79
+Iteration 61/100 - Best length: 776.79
+Iteration 62/100 - Best length: 776.79
+Iteration 63/100 - Best length: 776.79
+Iteration 64/100 - Best length: 776.79
+Iteration 65/100 - Best length: 776.79
+Iteration 66/100 - Best length: 776.79
+Iteration 67/100 - Best length: 776.79
+Iteration 68/100 - Best length: 776.79
+Iteration 69/100 - Best length: 776.79
+Iteration 70/100 - Best length: 776.79
+Iteration 71/100 - Best length: 776.79
+Iteration 72/100 - Best length: 776.79
+Iteration 73/100 - Best length: 776.79
+Iteration 74/100 - Best length: 776.79
+Iteration 75/100 - Best length: 776.79
+Iteration 76/100 - Best length: 776.79
+Iteration 77/100 - Best length: 776.79
+Iteration 78/100 - Best length: 776.79
+Iteration 79/100 - Best length: 776.79
+Iteration 80/100 - Best length: 776.79
+Iteration 81/100 - Best length: 776.79
+Iteration 82/100 - Best length: 776.79
+Iteration 83/100 - Best length: 776.79
+Iteration 84/100 - Best length: 776.79
+Iteration 85/100 - Best length: 773.25
+Iteration 86/100 - Best length: 773.25
+Iteration 87/100 - Best length: 773.25
+Iteration 88/100 - Best length: 773.25
+Iteration 89/100 - Best length: 773.25
+Iteration 90/100 - Best length: 773.25
+Iteration 91/100 - Best length: 773.25
+Iteration 92/100 - Best length: 773.25
+Iteration 93/100 - Best length: 773.25
+Iteration 94/100 - Best length: 773.25
+Iteration 95/100 - Best length: 773.25
+Iteration 96/100 - Best length: 773.25
+Iteration 97/100 - Best length: 773.25
+Iteration 98/100 - Best length: 773.25
+Iteration 99/100 - Best length: 773.25
+Iteration 100/100 - Best length: 773.25
+
+[5/6] Running Hybrid PSO (Swarm Intelligence)...
+Initial best cost (after 2-Opt): 772.86
+Iteration 10/50, Best Cost: 772.86
+Iteration 20/50, Best Cost: 772.86
+Iteration 30/50, Best Cost: 772.86
+Iteration 40/50, Best Cost: 772.86
+Iteration 50/50, Best Cost: 772.86
+Optimization finished. Final best cost: 772.86
+
+[6/6] Running Discrete Firefly Algorithm (Swarm Intelligence)...
+Iteration 0: Best Distance = 772.86
+Iteration 10: Best Distance = 772.86
+Iteration 20: Best Distance = 772.86
+Iteration 30: Best Distance = 772.86
+Iteration 40: Best Distance = 772.86
+Iteration 50: Best Distance = 772.86
+Iteration 60: Best Distance = 772.86
+Iteration 70: Best Distance = 772.86
+Iteration 80: Best Distance = 772.86
+Iteration 90: Best Distance = 772.86
+
+[7/8] Running Artificial Bee Colony for TSP (Swarm Intelligence)...
+Initial Best Distance: 1701.64
+Gen 100: Best Distance = 772.86
+
+[8/8] Running Cuckoo Search for TSP (Swarm Intelligence)...
+Initial Best Distance: 1726.56
+Gen 100: Best Distance = 773.25
+
+Testing problem size: 30
+
+================================================================================
+TSP COMPARISON: 30 Cities
+================================================================================
+
+[1/5] Running Hill Climbing (2-opt)...
+
+Running Hill Climbing TSP with 10 restarts...
+  Restart 1/10 - Local minimum: 983.88
+  Restart 2/10 - Local minimum: 903.53
+  Restart 3/10 - Local minimum: 1018.61
+  Restart 4/10 - Local minimum: 998.36
+  Restart 5/10 - Local minimum: 955.07
+  Restart 6/10 - Local minimum: 917.14
+  Restart 7/10 - Local minimum: 983.32
+  Restart 8/10 - Local minimum: 919.79
+  Restart 9/10 - Local minimum: 917.07
+  Restart 10/10 - Local minimum: 933.40
+Hill Climbing completed. Best cost: 903.53
+
+[2/5] A* Search skipped (n_cities=30 > 12)
+     A* is only practical for small TSP instances
+
+[3/5] Running Genetic Algorithm...
+
+Running Genetic Algorithm for TSP...
+  Population: 100, Generations: 200
+  Generation 50/200 - Best cost: 1118.10
+  Generation 100/200 - Best cost: 921.41
+  Generation 150/200 - Best cost: 921.41
+  Generation 200/200 - Best cost: 921.41
+Genetic Algorithm completed. Best cost: 921.41
+
+[4/5] Running ACO (Swarm Intelligence)...
+Iteration 1/100 - Best length: 1470.30
+Iteration 2/100 - Best length: 1068.42
+Iteration 3/100 - Best length: 1068.42
+Iteration 4/100 - Best length: 1043.30
+Iteration 5/100 - Best length: 1033.53
+Iteration 6/100 - Best length: 1033.53
+Iteration 7/100 - Best length: 1033.53
+Iteration 8/100 - Best length: 1033.53
+Iteration 9/100 - Best length: 1020.78
+Iteration 10/100 - Best length: 966.43
+Iteration 11/100 - Best length: 966.43
+Iteration 12/100 - Best length: 966.43
+Iteration 13/100 - Best length: 964.02
+Iteration 14/100 - Best length: 964.02
+Iteration 15/100 - Best length: 964.02
+Iteration 16/100 - Best length: 964.02
+Iteration 17/100 - Best length: 964.02
+Iteration 18/100 - Best length: 964.02
+Iteration 19/100 - Best length: 964.02
+Iteration 20/100 - Best length: 964.02
+Iteration 21/100 - Best length: 964.02
+Iteration 22/100 - Best length: 964.02
+Iteration 23/100 - Best length: 964.02
+Iteration 24/100 - Best length: 964.02
+Iteration 25/100 - Best length: 964.02
+Iteration 26/100 - Best length: 964.02
+Iteration 27/100 - Best length: 964.02
+Iteration 28/100 - Best length: 964.02
+Iteration 29/100 - Best length: 964.02
+Iteration 30/100 - Best length: 964.02
+Iteration 31/100 - Best length: 964.02
+Iteration 32/100 - Best length: 964.02
+Iteration 33/100 - Best length: 964.02
+Iteration 34/100 - Best length: 964.02
+Iteration 35/100 - Best length: 964.02
+Iteration 36/100 - Best length: 931.11
+Iteration 37/100 - Best length: 931.11
+Iteration 38/100 - Best length: 931.11
+Iteration 39/100 - Best length: 931.11
+Iteration 40/100 - Best length: 931.11
+Iteration 41/100 - Best length: 931.11
+Iteration 42/100 - Best length: 917.07
+Iteration 43/100 - Best length: 917.07
+Iteration 44/100 - Best length: 917.07
+Iteration 45/100 - Best length: 917.07
+Iteration 46/100 - Best length: 917.07
+Iteration 47/100 - Best length: 917.07
+Iteration 48/100 - Best length: 917.07
+Iteration 49/100 - Best length: 917.07
+Iteration 50/100 - Best length: 916.55
+Iteration 51/100 - Best length: 916.55
+Iteration 52/100 - Best length: 916.55
+Iteration 53/100 - Best length: 916.55
+Iteration 54/100 - Best length: 916.55
+Iteration 55/100 - Best length: 916.55
+Iteration 56/100 - Best length: 916.55
+Iteration 57/100 - Best length: 916.55
+Iteration 58/100 - Best length: 916.55
+Iteration 59/100 - Best length: 916.55
+Iteration 60/100 - Best length: 916.55
+Iteration 61/100 - Best length: 916.55
+Iteration 62/100 - Best length: 916.55
+Iteration 63/100 - Best length: 916.55
+Iteration 64/100 - Best length: 916.55
+Iteration 65/100 - Best length: 916.55
+Iteration 66/100 - Best length: 916.55
+Iteration 67/100 - Best length: 916.55
+Iteration 68/100 - Best length: 916.55
+Iteration 69/100 - Best length: 916.55
+Iteration 70/100 - Best length: 916.55
+Iteration 71/100 - Best length: 916.55
+Iteration 72/100 - Best length: 916.55
+Iteration 73/100 - Best length: 916.55
+Iteration 74/100 - Best length: 916.55
+Iteration 75/100 - Best length: 916.55
+Iteration 76/100 - Best length: 916.55
+Iteration 77/100 - Best length: 916.55
+Iteration 78/100 - Best length: 916.55
+Iteration 79/100 - Best length: 916.55
+Iteration 80/100 - Best length: 916.55
+Iteration 81/100 - Best length: 916.55
+Iteration 82/100 - Best length: 916.55
+Iteration 83/100 - Best length: 910.11
+Iteration 84/100 - Best length: 910.11
+Iteration 85/100 - Best length: 910.11
+Iteration 86/100 - Best length: 910.11
+Iteration 87/100 - Best length: 910.11
+Iteration 88/100 - Best length: 910.11
+Iteration 89/100 - Best length: 910.11
+Iteration 90/100 - Best length: 910.11
+Iteration 91/100 - Best length: 910.11
+Iteration 92/100 - Best length: 910.11
+Iteration 93/100 - Best length: 910.11
+Iteration 94/100 - Best length: 910.11
+Iteration 95/100 - Best length: 910.11
+Iteration 96/100 - Best length: 910.11
+Iteration 97/100 - Best length: 910.11
+Iteration 98/100 - Best length: 910.11
+Iteration 99/100 - Best length: 910.11
+Iteration 100/100 - Best length: 910.11
+
+[5/6] Running Hybrid PSO (Swarm Intelligence)...
+Initial best cost (after 2-Opt): 907.80
+Iteration 10/50, Best Cost: 903.53
+Iteration 20/50, Best Cost: 903.53
+Iteration 30/50, Best Cost: 903.53
+Iteration 40/50, Best Cost: 903.53
+Iteration 50/50, Best Cost: 903.53
+Optimization finished. Final best cost: 903.53
+
+[6/6] Running Discrete Firefly Algorithm (Swarm Intelligence)...
+Iteration 0: Best Distance = 907.80
+Iteration 10: Best Distance = 903.53
+Iteration 20: Best Distance = 903.53
+Iteration 30: Best Distance = 903.53
+Iteration 40: Best Distance = 903.53
+Iteration 50: Best Distance = 903.53
+Iteration 60: Best Distance = 903.53
+Iteration 70: Best Distance = 903.53
+Iteration 80: Best Distance = 903.53
+Iteration 90: Best Distance = 903.53
+
+[7/8] Running Artificial Bee Colony for TSP (Swarm Intelligence)...
+Initial Best Distance: 2848.55
+Gen 100: Best Distance = 946.55
+
+[8/8] Running Cuckoo Search for TSP (Swarm Intelligence)...
+Initial Best Distance: 2707.67
+Gen 100: Best Distance = 907.80
+
+Testing problem size: 40
+
+================================================================================
+TSP COMPARISON: 40 Cities
+================================================================================
+
+[1/5] Running Hill Climbing (2-opt)...
+
+Running Hill Climbing TSP with 10 restarts...
+  Restart 1/10 - Local minimum: 1005.71
+  Restart 2/10 - Local minimum: 1066.38
+  Restart 3/10 - Local minimum: 1005.71
+  Restart 4/10 - Local minimum: 1046.16
+  Restart 5/10 - Local minimum: 1045.69
+  Restart 6/10 - Local minimum: 979.46
+  Restart 7/10 - Local minimum: 1116.33
+  Restart 8/10 - Local minimum: 1005.75
+  Restart 9/10 - Local minimum: 984.59
+  Restart 10/10 - Local minimum: 992.81
+Hill Climbing completed. Best cost: 979.46
+
+[2/5] A* Search skipped (n_cities=40 > 12)
+     A* is only practical for small TSP instances
+
+[3/5] Running Genetic Algorithm...
+
+Running Genetic Algorithm for TSP...
+  Population: 100, Generations: 200
+  Generation 50/200 - Best cost: 1420.43
+  Generation 100/200 - Best cost: 1220.19
+  Generation 150/200 - Best cost: 1126.22
+  Generation 200/200 - Best cost: 1042.84
+Genetic Algorithm completed. Best cost: 1042.84
+
+[4/5] Running ACO (Swarm Intelligence)...
+Iteration 1/100 - Best length: 1657.48
+Iteration 2/100 - Best length: 1304.86
+Iteration 3/100 - Best length: 1217.97
+Iteration 4/100 - Best length: 1088.81
+Iteration 5/100 - Best length: 1088.81
+Iteration 6/100 - Best length: 1088.81
+Iteration 7/100 - Best length: 1088.81
+Iteration 8/100 - Best length: 1088.81
+Iteration 9/100 - Best length: 1088.81
+Iteration 10/100 - Best length: 1088.81
+Iteration 11/100 - Best length: 1088.81
+Iteration 12/100 - Best length: 1088.81
+Iteration 13/100 - Best length: 1088.81
+Iteration 14/100 - Best length: 1088.81
+Iteration 15/100 - Best length: 1087.95
+Iteration 16/100 - Best length: 1087.95
+Iteration 17/100 - Best length: 1087.95
+Iteration 18/100 - Best length: 1087.95
+Iteration 19/100 - Best length: 1087.95
+Iteration 20/100 - Best length: 1087.95
+Iteration 21/100 - Best length: 1087.95
+Iteration 22/100 - Best length: 1087.95
+Iteration 23/100 - Best length: 1083.44
+Iteration 24/100 - Best length: 1083.44
+Iteration 25/100 - Best length: 1080.40
+Iteration 26/100 - Best length: 1058.17
+Iteration 27/100 - Best length: 1058.17
+Iteration 28/100 - Best length: 1058.17
+Iteration 29/100 - Best length: 1058.17
+Iteration 30/100 - Best length: 1058.17
+Iteration 31/100 - Best length: 1058.17
+Iteration 32/100 - Best length: 1058.17
+Iteration 33/100 - Best length: 1058.17
+Iteration 34/100 - Best length: 1058.17
+Iteration 35/100 - Best length: 1058.17
+Iteration 36/100 - Best length: 1058.17
+Iteration 37/100 - Best length: 1058.17
+Iteration 38/100 - Best length: 1012.42
+Iteration 39/100 - Best length: 1012.42
+Iteration 40/100 - Best length: 1012.42
+Iteration 41/100 - Best length: 1012.42
+Iteration 42/100 - Best length: 1012.42
+Iteration 43/100 - Best length: 1012.42
+Iteration 44/100 - Best length: 1012.42
+Iteration 45/100 - Best length: 1012.42
+Iteration 46/100 - Best length: 1012.42
+Iteration 47/100 - Best length: 1012.42
+Iteration 48/100 - Best length: 1012.42
+Iteration 49/100 - Best length: 1012.42
+Iteration 50/100 - Best length: 1012.42
+Iteration 51/100 - Best length: 1012.42
+Iteration 52/100 - Best length: 1012.42
+Iteration 53/100 - Best length: 1012.42
+Iteration 54/100 - Best length: 1012.42
+Iteration 55/100 - Best length: 1012.42
+Iteration 56/100 - Best length: 1012.42
+Iteration 57/100 - Best length: 1012.42
+Iteration 58/100 - Best length: 1012.42
+Iteration 59/100 - Best length: 1012.42
+Iteration 60/100 - Best length: 1012.42
+Iteration 61/100 - Best length: 1012.42
+Iteration 62/100 - Best length: 1012.42
+Iteration 63/100 - Best length: 1012.42
+Iteration 64/100 - Best length: 1012.42
+Iteration 65/100 - Best length: 1012.42
+Iteration 66/100 - Best length: 1012.42
+Iteration 67/100 - Best length: 1012.42
+Iteration 68/100 - Best length: 1012.42
+Iteration 69/100 - Best length: 1012.42
+Iteration 70/100 - Best length: 1012.42
+Iteration 71/100 - Best length: 1012.42
+Iteration 72/100 - Best length: 1012.42
+Iteration 73/100 - Best length: 1012.42
+Iteration 74/100 - Best length: 1012.42
+Iteration 75/100 - Best length: 1012.42
+Iteration 76/100 - Best length: 1012.42
+Iteration 77/100 - Best length: 1012.42
+Iteration 78/100 - Best length: 1012.42
+Iteration 79/100 - Best length: 1012.42
+Iteration 80/100 - Best length: 1012.42
+Iteration 81/100 - Best length: 1012.42
+Iteration 82/100 - Best length: 1012.42
+Iteration 83/100 - Best length: 1012.42
+Iteration 84/100 - Best length: 1012.42
+Iteration 85/100 - Best length: 1012.42
+Iteration 86/100 - Best length: 1012.42
+Iteration 87/100 - Best length: 1012.42
+Iteration 88/100 - Best length: 1012.42
+Iteration 89/100 - Best length: 1012.42
+Iteration 90/100 - Best length: 1012.42
+Iteration 91/100 - Best length: 1012.42
+Iteration 92/100 - Best length: 1012.42
+Iteration 93/100 - Best length: 1012.42
+Iteration 94/100 - Best length: 1012.42
+Iteration 95/100 - Best length: 1012.42
+Iteration 96/100 - Best length: 1012.42
+Iteration 97/100 - Best length: 1012.42
+Iteration 98/100 - Best length: 1012.42
+Iteration 99/100 - Best length: 1012.42
+Iteration 100/100 - Best length: 1012.42
+
+[5/6] Running Hybrid PSO (Swarm Intelligence)...
+Initial best cost (after 2-Opt): 979.46
+Iteration 10/50, Best Cost: 979.46
+Iteration 20/50, Best Cost: 979.46
+Iteration 30/50, Best Cost: 979.46
+Iteration 40/50, Best Cost: 979.46
+Iteration 50/50, Best Cost: 979.46
+Optimization finished. Final best cost: 979.46
+
+[6/6] Running Discrete Firefly Algorithm (Swarm Intelligence)...
+Iteration 0: Best Distance = 984.59
+Iteration 10: Best Distance = 980.78
+Iteration 20: Best Distance = 980.78
+Iteration 30: Best Distance = 980.78
+Iteration 40: Best Distance = 980.78
+Iteration 50: Best Distance = 980.78
+Iteration 60: Best Distance = 980.78
+Iteration 70: Best Distance = 980.78
+Iteration 80: Best Distance = 980.78
+Iteration 90: Best Distance = 980.78
+
+[7/8] Running Artificial Bee Colony for TSP (Swarm Intelligence)...
+Initial Best Distance: 3569.09
+Gen 100: Best Distance = 1006.23
+
+[8/8] Running Cuckoo Search for TSP (Swarm Intelligence)...
+Initial Best Distance: 3858.10
+Gen 100: Best Distance = 1006.23
+Scalability plot saved to: comparison_tsp_scalability.png
+
+
+====================================================================================================
+COMPREHENSIVE FINAL SUMMARY - KEY INSIGHTS WITH ADVANCED METRICS
+====================================================================================================
+
+────────────────────────────────────────────────────────────────────────────────────────────────────
+[1] CONTINUOUS OPTIMIZATION - Rastrigin Function
+────────────────────────────────────────────────────────────────────────────────────────────────────
+
+✓ Best Solution Quality:
+  Algorithm: Genetic Algorithm
+  Cost: 0.000000
+  Time: 0.191s
+
+✓ Fastest Convergence:
+  Algorithm: ACOR (Swarm)
+  Iterations to 90% solution: 40
+
+✓ Most Robust (lowest variation across 5 runs):
+  Algorithm: ABC (Swarm)
+  Coefficient of Variation: 0.0000
+
+✓ Category Comparison (Swarm vs Traditional):
+  Metric                         Swarm Intelligence   Traditional         
+  ------------------------------ -------------------- --------------------
+  Average Solution Quality       3.089955             2.487395            
+  Average Computation Time       0.283               s 0.175               s
+  Average Convergence Speed      72.6                 629.0               
+
+  → Traditional algorithms achieve 19.5% better solution quality on average!
+
+────────────────────────────────────────────────────────────────────────────────────────────────────
+[2] DISCRETE OPTIMIZATION - TSP
+────────────────────────────────────────────────────────────────────────────────────────────────────
+
+✓ Best Solution Quality:
+  Algorithm: Hybrid PSO (Swarm)
+  Tour Cost: 903.53
+  Time: 21.220s
+
+✓ Fastest Convergence:
+  Algorithm: Hill Climbing
+  Iterations to 90% solution: 1
+
+✓ Most Robust (lowest variation across 5 runs):
+  Algorithm: Firefly (Swarm)
+  Coefficient of Variation: 0.0000
+
+✓ Category Comparison (Swarm vs Traditional):
+  Metric                         Swarm Intelligence   Traditional         
+  ------------------------------ -------------------- --------------------
+  Average Solution Quality       909.28               903.53              
+  Average Computation Time       9.363               s 1.578               s
+  Average Convergence Speed      1.8                  29.0                
+
+  → Traditional algorithms achieve 0.6% better solution quality on average!
+
+====================================================================================================
+COMPREHENSIVE COMPARISON COMPLETE!
+====================================================================================================
+
+📊 All visualizations saved to current directory:
+
+  Continuous Optimization (Rastrigin):
+    ├─ comparison_rastrigin_convergence.png
+    ├─ comparison_rastrigin_bars.png
+    ├─ comparison_rastrigin_convergence_speed.png
+    ├─ comparison_rastrigin_robustness.png
+    └─ comparison_rastrigin_scalability.png
+
+  Discrete Optimization (TSP):
+    ├─ comparison_tsp_convergence.png
+    ├─ comparison_tsp_bars.png
+    ├─ comparison_tsp_convergence_speed.png
+    ├─ comparison_tsp_robustness.png
+    ├─ comparison_tsp_scalability.png
+    └─ comparison_tsp_solutions.png
+
+====================================================================================================
+
+📈 New Metrics Included:
+  ✓ Convergence Speed: How fast algorithms reach near-optimal solutions
+  ✓ Computational Complexity: Time and space complexity analysis
+  ✓ Robustness: Performance consistency across multiple independent runs
+  ✓ Scalability: Performance trends with increasing problem size
+
+====================================================================================================
+
+✅ Convergence plot saved to results/cuckoo_convergence_demo.png
